@@ -1,0 +1,6 @@
+20:34:24 **** Incremental Build of configuration Debug for project disp-test ****
+make all 
+make: Für das Ziel „all“ ist nichts zu tun.
+
+20:34:25 Build Finished (took 150ms)
+

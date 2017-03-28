@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Mar  5 10:54:06 2017
+# Process ID: 7034
+# Current directory: /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.runs/image_filter_0_synth_1
+# Command line: vivado -log image_filter_0.vds -mode batch -messageDb vivado.pb -notrace -source image_filter_0.tcl
+# Log file: /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.runs/image_filter_0_synth_1/image_filter_0.vds
+# Journal file: /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.runs/image_filter_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source image_filter_0.tcl -notrace

@@ -1,0 +1,26 @@
+18:36:40 **** Build of configuration Debug for project disp-coproc-tests ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../disp-coproc-tests_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../disp-coproc-tests_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: disp-coproc-tests.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../disp-coproc-tests_bsp/ps7_cortexa9_0/lib -o "disp-coproc-tests.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: disp-coproc-tests.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size disp-coproc-tests.elf  |tee "disp-coproc-tests.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22888	   1152	  22564	  46604	   b60c	disp-coproc-tests.elf
+Finished building: disp-coproc-tests.elf.size
+ 
+
+18:36:40 Build Finished (took 181ms)
+

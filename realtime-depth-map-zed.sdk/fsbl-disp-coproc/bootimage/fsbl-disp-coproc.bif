@@ -1,0 +1,6 @@
+the_ROM_image:
+{
+	[bootloader]/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/Debug/fsbl-disp-coproc.elf
+	/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/system_top.bit
+	/home/sefo/devel/dev_boards/zedBoard/yocto/build/tmp/deploy/images/zedboard-zynq7/u-boot.elf
+}

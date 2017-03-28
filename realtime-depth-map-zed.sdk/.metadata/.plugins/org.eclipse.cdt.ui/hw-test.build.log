@@ -1,0 +1,6 @@
+20:52:21 **** Incremental Build of configuration Debug for project hw-test ****
+make all 
+make: Für das Ziel „all“ ist nichts zu tun.
+
+20:52:21 Build Finished (took 73ms)
+

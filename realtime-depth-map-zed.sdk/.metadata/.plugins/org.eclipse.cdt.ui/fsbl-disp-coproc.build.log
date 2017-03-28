@@ -1,0 +1,6 @@
+16:40:42 **** Auto Build of configuration Debug for project fsbl-disp-coproc ****
+make all 
+make: Für das Ziel „all“ ist nichts zu tun.
+
+16:40:43 Build Finished (took 77ms)
+

@@ -1,0 +1,6 @@
+10:24:53 **** Auto Build of configuration Debug for project hdmi-disparity-co ****
+make all 
+make: Für das Ziel „all“ ist nichts zu tun.
+
+10:24:53 Build Finished (took 85ms)
+

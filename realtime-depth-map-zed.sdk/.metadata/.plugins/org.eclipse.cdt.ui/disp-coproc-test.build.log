@@ -1,0 +1,18 @@
+18:43:54 **** Auto Build of configuration Debug for project disp-coproc-test ****
+make all 
+Building file: ../src/platform.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -I../../standalone_bsp_0/ps7_cortexa9_0/include -I"/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/disp-coproc-test/header" -c -fmessage-length=0 -MT"src/platform.o" -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: disp-coproc-test.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "disp-coproc-test.elf"  ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+../../standalone_bsp_0/ps7_cortexa9_0/lib/libxil.a(xil-crt0.o): In function `_start':
+/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/standalone_bsp_0/ps7_cortexa9_0/libsrc/standalone_v5_3/src/xil-crt0.S:133: undefined reference to `main'
+makefile:36: die Regel für Ziel „disp-coproc-test.elf“ scheiterte
+collect2: error: ld returned 1 exit status
+make: *** [disp-coproc-test.elf] Fehler 1
+
+18:43:54 Build Finished (took 133ms)
+

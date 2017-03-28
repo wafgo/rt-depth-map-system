@@ -1,0 +1,1566 @@
+20:20:34 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:20:38 INFO  : XSDB server has started successfully.
+20:20:40 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+20:26:54 INFO  : Invoking Bootgen: bootgen -image adv7511_zed_bare_metal.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/adv7511_zed_bare_metal/bootimage/BOOT.bin
+20:26:54 INFO  : Creating new bif file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/adv7511_zed_bare_metal/bootimage/adv7511_zed_bare_metal.bif
+20:26:55 INFO  : Bootgen command execution is done.
+21:55:23 INFO  : Invoking Bootgen: bootgen -image adv7511_zed_bare_metal.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/adv7511_zed_bare_metal/bootimage/BOOT.bin -w on
+21:55:23 INFO  : Bootgen command execution is done.
+21:57:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690866" && level==0} -index 1' command is executed.
+21:57:39 INFO  : 'fpga -state' command is executed.
+21:57:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:57:40 INFO  : Sourcing of '/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl' is done.
+21:57:40 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0' command is executed.
+21:57:40 INFO  : Hardware design information is loaded from '/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/system.hdf'.
+21:57:40 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0' command is executed.
+21:57:41 INFO  : 'stop' command is executed.
+21:57:41 INFO  : 'ps7_init' command is executed.
+21:57:41 INFO  : 'ps7_post_config' command is executed.
+21:57:41 INFO  : 'con' command is executed.
+21:57:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:57:42 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:57:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:57:42 INFO  : The application '/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/adv7511_zed_bare_metal/Debug/adv7511_zed_bare_metal.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:57:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+loadhw /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+dow /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/adv7511_zed_bare_metal/Debug/adv7511_zed_bare_metal.elf
+----------------End of Script----------------
+
+21:57:42 INFO  : Memory regions updated for context APU
+21:57:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:57:43 INFO  : 'con' command is executed.
+21:57:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+con
+----------------End of Script----------------
+
+21:58:52 INFO  : Disconnected from the channel tcfchan#1.
+21:58:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690866" && level==0} -index 1' command is executed.
+21:58:55 INFO  : 'fpga -state' command is executed.
+21:58:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:58:56 INFO  : Sourcing of '/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl' is done.
+21:58:56 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0' command is executed.
+21:58:56 INFO  : Hardware design information is loaded from '/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/system.hdf'.
+21:58:56 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0' command is executed.
+21:58:56 INFO  : 'stop' command is executed.
+21:58:57 INFO  : 'ps7_init' command is executed.
+21:58:57 INFO  : 'ps7_post_config' command is executed.
+21:58:57 INFO  : 'con' command is executed.
+21:58:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:58:58 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:58:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:58:58 INFO  : The application '/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/adv7511_zed_bare_metal/Debug/adv7511_zed_bare_metal.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:58:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+loadhw /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+dow /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/adv7511_zed_bare_metal/Debug/adv7511_zed_bare_metal.elf
+----------------End of Script----------------
+
+21:58:58 INFO  : Memory regions updated for context APU
+21:58:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:58:59 INFO  : 'con' command is executed.
+21:58:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+con
+----------------End of Script----------------
+
+21:59:18 INFO  : Disconnected from the channel tcfchan#2.
+21:59:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690866" && level==0} -index 1' command is executed.
+21:59:21 INFO  : 'fpga -state' command is executed.
+21:59:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:59:22 INFO  : Sourcing of '/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl' is done.
+21:59:22 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0' command is executed.
+21:59:22 INFO  : Hardware design information is loaded from '/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/system.hdf'.
+21:59:22 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0' command is executed.
+21:59:22 INFO  : 'stop' command is executed.
+21:59:23 INFO  : 'ps7_init' command is executed.
+21:59:23 INFO  : 'ps7_post_config' command is executed.
+21:59:23 INFO  : 'con' command is executed.
+21:59:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:59:24 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:59:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:59:24 INFO  : The application '/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/adv7511_zed_bare_metal/Debug/adv7511_zed_bare_metal.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:59:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+loadhw /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+dow /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/adv7511_zed_bare_metal/Debug/adv7511_zed_bare_metal.elf
+----------------End of Script----------------
+
+21:59:24 INFO  : Memory regions updated for context APU
+21:59:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:59:25 INFO  : 'con' command is executed.
+21:59:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+con
+----------------End of Script----------------
+
+22:00:09 INFO  : Disconnected from the channel tcfchan#3.
+22:00:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690866" && level==0} -index 1' command is executed.
+22:00:13 INFO  : 'fpga -state' command is executed.
+22:00:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:00:14 INFO  : Sourcing of '/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl' is done.
+22:00:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0' command is executed.
+22:00:15 INFO  : Hardware design information is loaded from '/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/system.hdf'.
+22:00:15 INFO  : 'targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0' command is executed.
+22:00:15 INFO  : 'stop' command is executed.
+22:00:16 INFO  : 'ps7_init' command is executed.
+22:00:16 INFO  : 'ps7_post_config' command is executed.
+22:00:16 INFO  : 'con' command is executed.
+22:00:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:00:17 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:00:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:00:17 INFO  : The application '/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/adv7511_zed_bare_metal/Debug/adv7511_zed_bare_metal.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:00:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+loadhw /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/system.hdf
+targets -set -filter {name =~"APU" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+stop
+ps7_init
+ps7_post_config
+con
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+dow /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/adv7511_zed_bare_metal/Debug/adv7511_zed_bare_metal.elf
+----------------End of Script----------------
+
+22:00:17 INFO  : Memory regions updated for context APU
+22:00:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:00:17 INFO  : 'con' command is executed.
+22:00:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248690866"} -index 0
+con
+----------------End of Script----------------
+
+22:02:50 WARN  : Unexpected exception occurred.
+java.io.IOException: Command [C 3534 xsdb eval "disconnect tcfchan#4"] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Communication channel is closed by remote peer
+	at org.eclipse.tcf.core.AbstractChannel$1$2.run(AbstractChannel.java:305)
+	... 2 more
+18:34:08 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+18:34:11 INFO  : XSDB server has started successfully.
+18:34:12 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:34:12 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+18:34:16 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1480094916000,  Project:1479923836000
+18:34:16 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:34:16 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+18:34:22 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:34:26 INFO  : 
+18:34:27 INFO  : Updating hardware inferred compiler options for adv7511_zed_bare_metal.
+18:34:27 INFO  : Clearing existing target manager status.
+18:48:19 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:14:26 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:14:27 INFO  : XSDB server has started successfully.
+19:14:27 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+19:14:28 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+19:14:36 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1480097372000,  Project:1480094916000
+19:14:36 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+19:14:38 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+19:14:44 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:14:44 INFO  : Clearing existing target manager status.
+19:14:46 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+19:14:46 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+19:16:10 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:16:29 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:16:30 INFO  : XSDB server has started successfully.
+19:16:31 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+19:21:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:21:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690866" && level==0} -index 1' command is executed.
+19:21:47 INFO  : FPGA configured successfully with bitstream "/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/system_top.bit"
+19:25:09 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(TM.java:1011)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:534)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:701)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+19:25:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:25:47 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:865)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:746)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+19:26:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:26:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690866" && level==0} -index 1' command is executed.
+19:26:01 INFO  : FPGA configured successfully with bitstream "/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/system_top.bit"
+19:26:06 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:26:07 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:865)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:746)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+19:26:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+19:26:31 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:865)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:746)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+19:29:05 INFO  : System reset is completed.
+19:29:06 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:865)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:746)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+19:30:24 INFO  : System reset is completed.
+19:30:25 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:865)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:746)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+19:31:01 INFO  : System reset is completed.
+19:31:02 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:865)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:746)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+19:31:22 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:33:19 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:33:22 INFO  : XSDB server has started successfully.
+20:33:24 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+20:33:24 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+20:34:35 INFO  : System reset is completed.
+20:34:36 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:865)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:746)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+20:35:14 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:36:19 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:36:20 INFO  : XSDB server has started successfully.
+20:36:21 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+20:38:14 ERROR : Timed out. 180 seconds have elapsed while waiting for XSDB server to launch.
+20:38:14 ERROR : Failed to get all peripherals
+java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+20:38:14 ERROR : Unable to disconnect from existing targets
+java.lang.RuntimeException: Failed to get all peripherals
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.handleResult(XsdbCommandUtils.java:306)
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:256)
+	at com.xilinx.sdk.hw.internal.HwPlatform.populatePeripheralDetails(HwPlatform.java:655)
+	at com.xilinx.sdk.hw.internal.HwPlatform.getProcessorNames(HwPlatform.java:525)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectExistingTargets(TM.java:299)
+	at com.xilinx.sdk.targetmanager.internal.TM.terminate(TM.java:212)
+	at com.xilinx.sdk.targetmanager.TMPlugin.stop(TMPlugin.java:58)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:200)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+Caused by: java.lang.Exception: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.Command.<init>(Command.java:83)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$8.<init>(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.issueTcfCmd(XSDBCommandManager.java:384)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager.access$4(XSDBCommandManager.java:381)
+	at com.xilinx.sdk.xsdb.XSDBCommandManager$7.run(XSDBCommandManager.java:376)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.Error: Channel is waiting for Hello message
+	at org.eclipse.tcf.core.AbstractChannel.sendCommand(AbstractChannel.java:874)
+	at org.eclipse.tcf.core.Command.<init>(Command.java:79)
+	... 6 more
+20:38:14 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:39:23 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Project disp-test does not exist. Please check that your launch configuration specifies a valid project in your workspace.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:806)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+20:41:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:41:12 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Error downloading program to target: 
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.loadProgram(XilinxAppLaunchConfigurationDelegate.java:865)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:746)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+20:41:49 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:49:24 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:49:25 INFO  : XSDB server has started successfully.
+20:49:25 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+20:49:25 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+20:50:55 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:51:30 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:52:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:52:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690866" && level==0} -index 1' command is executed.
+20:52:14 INFO  : FPGA configured successfully with bitstream "/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/system_top.bit"
+20:52:22 INFO  : Processor reset is completed for ps7_cortexa9_0
+20:54:15 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Project hw-test does not exist. Please check that your launch configuration specifies a valid project in your workspace.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:806)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+20:54:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:01:10 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Project tst does not exist. Please check that your launch configuration specifies a valid project in your workspace.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:806)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+21:01:34 INFO  : Processor reset is completed for ps7_cortexa9_0
+21:02:31 INFO  : Processor reset is completed for ps7_cortexa9_0
+22:35:45 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:36:41 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+22:36:43 INFO  : XSDB server has started successfully.
+22:36:43 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+22:36:43 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+22:39:28 INFO  : Invoking Bootgen: bootgen -image boot_with_dcx.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/boot_with_dcx/bootimage/BOOT.bin
+22:39:28 INFO  : Creating new bif file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/boot_with_dcx/bootimage/boot_with_dcx.bif
+22:39:29 INFO  : Bootgen command execution is done.
+18:18:00 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+18:18:03 INFO  : XSDB server has started successfully.
+18:18:11 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:18:14 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+18:26:30 ERROR : 
+java.lang.NullPointerException
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.getDirectory(LinuxProjectHandler.java:395)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.getArmLinuxIncluedePath(LinuxProjectHandler.java:528)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.getLinuxIncludes(LinuxProjectHandler.java:384)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.addLinuxToolchainIncludes(LinuxProjectHandler.java:348)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.getCompilerLinkerDetails(LinuxProjectHandler.java:338)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.setLinuxToolchainPaths(LinuxProjectHandler.java:251)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.createNewLinuxApp(LinuxProjectHandler.java:115)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.createCoreApp(LinuxProjectHandler.java:63)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler.createApplication(AppCreationHandler.java:123)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler$1.run(AppCreationHandler.java:62)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler.execute(AppCreationHandler.java:58)
+	at com.xilinx.sdk.appwiz.ApplicationWizard.createNewProject(ApplicationWizard.java:120)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.doRun(NewCProjectWizard.java:293)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard$1$1$1.run(NewCProjectWizard.java:235)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:69)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1028)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard$1$1.run(NewCProjectWizard.java:245)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:164)
+	at org.eclipse.ui.internal.UISynchronizer$3.run(UISynchronizer.java:158)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3717)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3366)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:173)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:388)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1028)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.invokeRunnable(NewCProjectWizard.java:272)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.performFinish(NewCProjectWizard.java:162)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:827)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:432)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:628)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:826)
+	at org.eclipse.jface.window.Window.open(Window.java:802)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:135)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:499)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+18:26:42 ERROR : 
+java.lang.NullPointerException
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.getDirectory(LinuxProjectHandler.java:395)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.getArmLinuxIncluedePath(LinuxProjectHandler.java:528)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.getLinuxIncludes(LinuxProjectHandler.java:384)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.addLinuxToolchainIncludes(LinuxProjectHandler.java:348)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.getCompilerLinkerDetails(LinuxProjectHandler.java:338)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.setLinuxToolchainPaths(LinuxProjectHandler.java:251)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.createNewLinuxApp(LinuxProjectHandler.java:115)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.createCoreApp(LinuxProjectHandler.java:63)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler.createApplication(AppCreationHandler.java:123)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler$1.run(AppCreationHandler.java:62)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler.execute(AppCreationHandler.java:58)
+	at com.xilinx.sdk.appwiz.ApplicationWizard.createNewProject(ApplicationWizard.java:120)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.doRun(NewCProjectWizard.java:293)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard$1$1$1.run(NewCProjectWizard.java:235)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:69)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1028)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard$1$1.run(NewCProjectWizard.java:245)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:164)
+	at org.eclipse.ui.internal.UISynchronizer$3.run(UISynchronizer.java:158)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3717)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3366)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:173)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:388)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1028)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.invokeRunnable(NewCProjectWizard.java:272)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.performFinish(NewCProjectWizard.java:162)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:827)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:432)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:628)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:826)
+	at org.eclipse.jface.window.Window.open(Window.java:802)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:135)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:499)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+18:26:54 ERROR : 
+java.lang.NullPointerException
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.getDirectory(LinuxProjectHandler.java:395)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.getArmLinuxIncluedePath(LinuxProjectHandler.java:528)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.getLinuxIncludes(LinuxProjectHandler.java:384)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.addLinuxToolchainIncludes(LinuxProjectHandler.java:348)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.getCompilerLinkerDetails(LinuxProjectHandler.java:338)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.setLinuxToolchainPaths(LinuxProjectHandler.java:251)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.createNewLinuxApp(LinuxProjectHandler.java:115)
+	at com.xilinx.sdk.appwiz.core.LinuxProjectHandler.createCoreApp(LinuxProjectHandler.java:63)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler.createApplication(AppCreationHandler.java:123)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler$1.run(AppCreationHandler.java:62)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler.execute(AppCreationHandler.java:58)
+	at com.xilinx.sdk.appwiz.ApplicationWizard.createNewProject(ApplicationWizard.java:120)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.doRun(NewCProjectWizard.java:293)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard$1$1$1.run(NewCProjectWizard.java:235)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:69)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1028)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard$1$1.run(NewCProjectWizard.java:245)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:164)
+	at org.eclipse.ui.internal.UISynchronizer$3.run(UISynchronizer.java:158)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3717)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3366)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:173)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:388)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1028)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.invokeRunnable(NewCProjectWizard.java:272)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.performFinish(NewCProjectWizard.java:162)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:827)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:432)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:628)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:826)
+	at org.eclipse.jface.window.Window.open(Window.java:802)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:135)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:499)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+05:09:47 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+05:09:51 INFO  : XSDB server has started successfully.
+05:09:52 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+05:09:52 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+14:40:12 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:40:15 INFO  : XSDB server has started successfully.
+14:40:17 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+14:40:17 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+14:43:26 INFO  : Invoking Bootgen: bootgen -image hdmi-disparity-co.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co/bootimage/BOOT.bin
+14:43:26 INFO  : Creating new bif file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co/bootimage/hdmi-disparity-co.bif
+14:43:26 INFO  : Bootgen command execution is done.
+22:41:36 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+22:41:38 INFO  : XSDB server has started successfully.
+22:41:38 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+22:41:38 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+22:41:41 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1480281757000,  Project:1480097372000
+22:41:41 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+22:41:41 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+22:41:46 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:41:47 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-5573710387c1458bab34e432c03a3432-systemd-timesyncd.service-gXw0Ii"
+
+22:41:47 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-5573710387c1458bab34e432c03a3432-rtkit-daemon.service-C7GWRB"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-5573710387c1458bab34e432c03a3432-colord.service-Oo3frc"
+
+22:41:47 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+22:41:49 ERROR : Error updating BSP project MSS files.
+22:41:50 INFO  : Updating hardware inferred compiler options for hdmi-disparity-co.
+22:41:50 INFO  : Clearing existing target manager status.
+22:42:06 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+22:42:06 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+22:42:06 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+22:42:06 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co_bsp/system.mss : null
+22:42:32 INFO  : Invoking Bootgen: bootgen -image hdmi-disparity-co.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co/bootimage/BOOT.bin -w on
+22:42:32 INFO  : Bootgen command execution is done.
+23:02:24 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:06:53 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:06:57 INFO  : XSDB server has started successfully.
+10:06:58 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+10:06:58 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+10:07:02 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1480410373000,  Project:1480281757000
+10:07:02 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+10:07:02 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+10:07:08 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+10:07:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-aef5fbc08e9149f48c6d490305da07da-colord.service-HrE3zg"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-aef5fbc08e9149f48c6d490305da07da-rtkit-daemon.service-RThm1A"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-aef5fbc08e9149f48c6d490305da07da-systemd-timesyncd.service-X4GcPn"
+
+10:07:09 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+10:07:09 ERROR : Error updating BSP project MSS files.
+10:07:10 INFO  : Updating hardware inferred compiler options for hdmi-disparity-co.
+10:07:10 INFO  : Clearing existing target manager status.
+10:07:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+10:07:19 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+10:07:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+10:07:19 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co_bsp/system.mss : null
+10:07:25 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+10:07:25 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+10:07:25 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+10:07:25 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co_bsp/system.mss : null
+10:07:38 INFO  : Invoking Bootgen: bootgen -image hdmi-disparity-co.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co/bootimage/BOOT.bin -w on
+10:07:39 INFO  : Bootgen command execution is done.
+10:14:32 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+10:14:32 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+10:14:32 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+10:14:32 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co_bsp/system.mss : null
+10:14:32 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+10:14:32 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+10:14:32 ERROR : Failed to get_connected_periphs
+Reason: ERROR: [Common 17-55] 'get_property' expects at least one object.
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+
+10:23:06 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1480411339000,  Project:1480410373000
+10:23:06 INFO  : Project system_top_hw_platform_0's source hardware specification located at /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+10:23:20 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+10:23:26 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+10:23:27 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-aef5fbc08e9149f48c6d490305da07da-colord.service-HrE3zg"
+
+10:23:27 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-aef5fbc08e9149f48c6d490305da07da-rtkit-daemon.service-RThm1A"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-aef5fbc08e9149f48c6d490305da07da-systemd-timesyncd.service-X4GcPn"
+
+10:23:27 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+10:23:27 ERROR : Error updating BSP project MSS files.
+10:23:28 INFO  : Updating hardware inferred compiler options for hdmi-disparity-co.
+10:23:28 INFO  : Clearing existing target manager status.
+10:24:27 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core disparity_pixel_coprocessor of version 1.0 not found in repositories
+
+10:24:27 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co_bsp/system.mss line 69 - No IP instance named disparity_pixel_coprocessor_0 present in hardware design
+
+10:24:27 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+10:24:27 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+10:24:27 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core disparity_pixel_coprocessor of version 1.0 not found in repositories
+
+10:24:27 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co_bsp/system.mss line 69 - No IP instance named disparity_pixel_coprocessor_0 present in hardware design
+
+10:24:27 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+10:24:27 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co_bsp/system.mss : null
+10:24:52 INFO  : Invoking Bootgen: bootgen -image hdmi-disparity-co.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co/bootimage/BOOT.bin -w on
+10:24:53 INFO  : Bootgen command execution is done.
+10:50:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core disparity_pixel_coprocessor of version 1.0 not found in repositories
+
+10:50:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co_bsp/system.mss line 69 - No IP instance named disparity_pixel_coprocessor_0 present in hardware design
+ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+10:50:52 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+10:50:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core disparity_pixel_coprocessor of version 1.0 not found in repositories
+
+10:50:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co_bsp/system.mss line 69 - No IP instance named disparity_pixel_coprocessor_0 present in hardware design
+
+10:50:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+10:50:52 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co_bsp/system.mss : null
+10:50:54 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core disparity_pixel_coprocessor of version 1.0 not found in repositories
+
+10:50:54 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co_bsp/system.mss line 69 - No IP instance named disparity_pixel_coprocessor_0 present in hardware design
+ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+10:50:54 ERROR :  [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+10:50:54 ERROR : (XSDB Server)ERROR: [Hsi 55-1594] Core disparity_pixel_coprocessor of version 1.0 not found in repositories
+
+10:50:54 ERROR : (XSDB Server)ERROR: [Hsi 55-1403] /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co_bsp/system.mss line 69 - No IP instance named disparity_pixel_coprocessor_0 present in hardware design
+
+10:50:54 ERROR : (XSDB Server)ERROR: [Hsi 55-1452] Error: running open_sw_design.
+
+10:50:54 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/hdmi-disparity-co_bsp/system.mss : null
+10:52:18 ERROR : Unexpected error while launching program.
+java.lang.RuntimeException: Error while running ps7_init method.
+Cannot Read from target
+
+
+    MMU section translation fault
+
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(TM.java:1089)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.runTargetSetup(XilinxAppLaunchConfigurationDelegate.java:514)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(XilinxAppLaunchConfigurationDelegate.java:701)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:311)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:52:35 ERROR : Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+10:52:35 ERROR : Unexpected error while launching program.
+com.xilinx.sdk.targetmanager.TMException: Connection to Board Failed
+
+
+    Unknown Error Occured
+    Cable is not powered-on
+
+	at com.xilinx.sdk.targetmanager.internal.TM.isFPGAConfigured(TM.java:374)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.isFpgaConfigured(XilinxAppLaunchConfigurationDelegate.java:409)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(XilinxAppLaunchConfigurationDelegate.java:303)
+	at com.xilinx.sdk.debug.ui.XilinxAppLaunchDelegateWrapper.launch(XilinxAppLaunchDelegateWrapper.java:31)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:858)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:707)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1018)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1222)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+10:53:01 INFO  : ps7_init is completed.
+10:53:01 INFO  : ps7_post_config is completed.
+10:53:02 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:53:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:53:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248690866" && level==0} -index 1' command is executed.
+10:53:12 INFO  : FPGA configured successfully with bitstream "/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/system_top.bit"
+10:53:18 INFO  : Processor reset is completed for ps7_cortexa9_0
+10:54:46 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:04:01 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:04:58 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:05:11 INFO  : Processor reset is completed for ps7_cortexa9_0
+11:12:44 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:26:24 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:26:26 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:26:26 INFO  : XSDB server has started successfully.
+13:26:26 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+13:26:27 INFO  : XSDB server has started successfully.
+13:26:38 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+13:26:38 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1480508746000,  Project:1480411339000
+13:26:38 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+13:26:38 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+13:26:43 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:26:45 INFO  : 
+13:26:46 INFO  : Updating hardware inferred compiler options for test_gpio.
+13:26:57 INFO  : Clearing existing target manager status.
+13:27:26 ERROR : (XSDB Server)/home/sefo/devel/Programme/Xilinx/SDK/2015.4/bin/loader: Zeile 164:  9280 Speicherzugriffsfehler  (Speicherabzug geschrieben) "$RDI_PROG" "$@"
+
+13:27:26 ERROR : Failed to call GENERATE_APP 
+java.io.IOException: Command [C 61 xsdb eval "::hsi::utils::generate_app_template -hw /home/sefo/deve...] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Communication channel is closed by remote peer
+	at org.eclipse.tcf.core.AbstractChannel$1$2.run(AbstractChannel.java:305)
+	... 2 more
+13:27:26 ERROR : 
+java.lang.RuntimeException: Failed to call GENERATE_APP 
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.handleResult(XsdbCommandUtils.java:306)
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:256)
+	at com.xilinx.sdk.appwiz.internal.AppGen.generate(AppGen.java:555)
+	at com.xilinx.sdk.appwiz.core.StandaloneProjectHandler.createCoreApp(StandaloneProjectHandler.java:85)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler.createApplication(AppCreationHandler.java:123)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler$1.run(AppCreationHandler.java:62)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler.execute(AppCreationHandler.java:58)
+	at com.xilinx.sdk.appwiz.ApplicationWizard.createNewProject(ApplicationWizard.java:120)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.doRun(NewCProjectWizard.java:293)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard$1$1$1.run(NewCProjectWizard.java:235)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:69)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1028)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard$1$1.run(NewCProjectWizard.java:245)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:164)
+	at org.eclipse.ui.internal.UISynchronizer$3.run(UISynchronizer.java:158)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3717)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3366)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:173)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:388)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1028)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.invokeRunnable(NewCProjectWizard.java:272)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.performFinish(NewCProjectWizard.java:162)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:827)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:432)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:628)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:826)
+	at org.eclipse.jface.window.Window.open(Window.java:802)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:135)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:499)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+Caused by: java.io.IOException: Command [C 61 xsdb eval "::hsi::utils::generate_app_template -hw /home/sefo/deve...] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Communication channel is closed by remote peer
+	at org.eclipse.tcf.core.AbstractChannel$1$2.run(AbstractChannel.java:305)
+	... 2 more
+13:27:27 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:29:08 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:29:09 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:29:09 INFO  : XSDB server has started successfully.
+13:29:10 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+13:29:10 INFO  : XSDB server has started successfully.
+13:29:14 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+13:29:50 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:29:52 INFO  : XSDB server has started successfully.
+13:29:52 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+13:30:21 ERROR : (XSDB Server)/home/sefo/devel/Programme/Xilinx/SDK/2015.4/bin/loader: Zeile 164: 11851 Speicherzugriffsfehler  (Speicherabzug geschrieben) "$RDI_PROG" "$@"
+
+13:30:21 ERROR : Failed to call GENERATE_APP 
+java.io.IOException: Command [C 47 xsdb eval "::hsi::utils::generate_app_template -hw /home/sefo/deve...] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Communication channel is closed by remote peer
+	at org.eclipse.tcf.core.AbstractChannel$1$2.run(AbstractChannel.java:305)
+	... 2 more
+13:30:21 ERROR : 
+java.lang.RuntimeException: Failed to call GENERATE_APP 
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.handleResult(XsdbCommandUtils.java:306)
+	at com.xilinx.sdk.xsdb.XsdbCommandUtils.executeAndRespond(XsdbCommandUtils.java:256)
+	at com.xilinx.sdk.appwiz.internal.AppGen.generate(AppGen.java:555)
+	at com.xilinx.sdk.appwiz.core.StandaloneProjectHandler.createCoreApp(StandaloneProjectHandler.java:85)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler.createApplication(AppCreationHandler.java:123)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler$1.run(AppCreationHandler.java:62)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2327)
+	at com.xilinx.sdk.appwiz.core.AppCreationHandler.execute(AppCreationHandler.java:58)
+	at com.xilinx.sdk.appwiz.ApplicationWizard.createNewProject(ApplicationWizard.java:120)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.doRun(NewCProjectWizard.java:293)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard$1$1$1.run(NewCProjectWizard.java:235)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:69)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation$1.run(WorkspaceModifyOperation.java:106)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1028)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard$1$1.run(NewCProjectWizard.java:245)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:164)
+	at org.eclipse.ui.internal.UISynchronizer$3.run(UISynchronizer.java:158)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3717)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3366)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:173)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:388)
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1028)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.invokeRunnable(NewCProjectWizard.java:272)
+	at org.eclipse.cdt.ui.wizards.NewCProjectWizard.performFinish(NewCProjectWizard.java:162)
+	at org.eclipse.jface.wizard.WizardDialog.finishPressed(WizardDialog.java:827)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:432)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:628)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:826)
+	at org.eclipse.jface.window.Window.open(Window.java:802)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:135)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:499)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1392)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3742)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3363)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1113)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:997)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:140)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:611)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:567)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:354)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:181)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:591)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1426)
+Caused by: java.io.IOException: Command [C 47 xsdb eval "::hsi::utils::generate_app_template -hw /home/sefo/deve...] aborted
+	at org.eclipse.tcf.core.AbstractChannel$9.run(AbstractChannel.java:753)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:95)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.IOException: Communication channel is closed by remote peer
+	at org.eclipse.tcf.core.AbstractChannel$1$2.run(AbstractChannel.java:305)
+	... 2 more
+13:30:21 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:33:29 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:33:30 INFO  : XSDB server has started successfully.
+13:33:30 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+13:33:30 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+13:34:33 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:34:34 INFO  : XSDB server has started successfully.
+13:34:34 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+13:35:52 INFO  : Invoking Bootgen: bootgen -image fsbl_adv_disp_coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl_adv_disp_coproc/bootimage/BOOT.bin
+13:35:52 INFO  : Creating new bif file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl_adv_disp_coproc/bootimage/fsbl_adv_disp_coproc.bif
+13:35:52 INFO  : Bootgen command execution is done.
+14:15:55 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:15:57 INFO  : XSDB server has started successfully.
+14:15:57 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+14:17:12 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin
+14:17:12 INFO  : Creating new bif file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/fsbl-disp-coproc.bif
+14:17:13 INFO  : Bootgen command execution is done.
+16:09:29 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:09:31 INFO  : XSDB server has started successfully.
+16:09:40 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+16:09:44 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+19:53:35 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:53:43 INFO  : XSDB server has started successfully.
+19:53:46 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+19:53:48 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+19:53:54 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1488739938000,  Project:1480511675000
+19:53:54 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+19:53:56 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+19:54:04 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:54:11 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-7cc278b6c77248eda488ce13bb931119-systemd-timesyncd.service-SoHMk9"
+
+19:54:11 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-7cc278b6c77248eda488ce13bb931119-colord.service-S9Pld2"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-7cc278b6c77248eda488ce13bb931119-rtkit-daemon.service-HuaT04"
+
+19:54:11 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+19:54:11 ERROR : Error updating BSP project MSS files.
+19:54:12 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+19:54:12 INFO  : Clearing existing target manager status.
+20:01:29 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+20:01:29 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+20:01:29 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+20:01:29 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+20:02:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+20:02:33 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+20:02:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+20:02:33 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+20:04:37 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:05:06 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:05:07 INFO  : XSDB server has started successfully.
+20:05:08 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+20:05:08 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+20:06:51 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+20:06:52 INFO  : Bootgen command execution is done.
+20:06:12 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:06:16 INFO  : XSDB server has started successfully.
+20:06:17 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+20:06:17 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+20:06:22 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1489351837000,  Project:1488739938000
+20:06:22 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+20:06:22 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+20:06:28 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:06:29 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-d5aef34e2c34430599cbebc1b9ff59de-rtkit-daemon.service-6mECJ5"
+
+20:06:29 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-d5aef34e2c34430599cbebc1b9ff59de-colord.service-tE7bXt"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-d5aef34e2c34430599cbebc1b9ff59de-systemd-timesyncd.service-2xKPJy"
+
+20:06:29 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+20:06:29 ERROR : Error updating BSP project MSS files.
+20:06:30 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+20:06:30 INFO  : Clearing existing target manager status.
+20:06:48 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+20:06:48 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+20:06:48 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+20:06:48 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+20:07:25 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+20:07:25 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+20:07:25 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+20:07:25 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+20:07:37 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+20:07:38 INFO  : Bootgen command execution is done.
+21:15:26 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:42:53 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:42:57 INFO  : XSDB server has started successfully.
+21:42:58 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+21:42:58 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+21:43:03 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1489783286000,  Project:1489351837000
+21:43:03 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+21:43:03 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+21:43:08 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:43:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-0ef5430cbde243eeb09494509959d94c-rtkit-daemon.service-LN3L6H"
+
+21:43:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-0ef5430cbde243eeb09494509959d94c-systemd-timesyncd.service-rEx9jn"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-0ef5430cbde243eeb09494509959d94c-colord.service-9Swith"
+
+21:43:10 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+21:43:10 ERROR : Error updating BSP project MSS files.
+21:43:10 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+21:43:10 INFO  : Clearing existing target manager status.
+21:43:29 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+21:43:29 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+21:43:29 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+21:43:29 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+21:43:44 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+21:43:45 INFO  : Bootgen command execution is done.
+21:44:46 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+13:09:15 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+13:09:19 INFO  : XSDB server has started successfully.
+13:09:20 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+13:09:20 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+13:09:25 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1489791539000,  Project:1489783286000
+13:09:25 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+13:09:25 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+13:09:30 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+13:09:31 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-317cf2b058064a89a9a8ca2269084844-rtkit-daemon.service-B3qRDW"
+
+13:09:31 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-317cf2b058064a89a9a8ca2269084844-systemd-timesyncd.service-ryyv1u"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-317cf2b058064a89a9a8ca2269084844-colord.service-VKzSDq"
+
+13:09:31 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+13:09:31 ERROR : Error updating BSP project MSS files.
+13:09:32 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+13:09:32 INFO  : Clearing existing target manager status.
+13:10:31 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+13:10:31 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+13:10:31 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+13:10:31 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+13:10:45 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+13:10:45 INFO  : Bootgen command execution is done.
+13:38:48 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:16:50 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:16:51 INFO  : XSDB server has started successfully.
+14:16:51 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+14:16:51 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+14:16:54 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1489929157000,  Project:1489791539000
+14:16:54 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+14:16:54 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+14:17:00 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+14:17:01 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-317cf2b058064a89a9a8ca2269084844-rtkit-daemon.service-B3qRDW"
+
+14:17:01 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-317cf2b058064a89a9a8ca2269084844-systemd-timesyncd.service-ryyv1u"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-317cf2b058064a89a9a8ca2269084844-colord.service-VKzSDq"
+
+14:17:01 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+14:17:01 ERROR : Error updating BSP project MSS files.
+14:17:01 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+14:17:01 INFO  : Clearing existing target manager status.
+14:17:13 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+14:17:13 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+14:17:13 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+14:17:13 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+14:17:26 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+14:17:27 INFO  : Bootgen command execution is done.
+14:37:04 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:14:25 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:14:27 INFO  : XSDB server has started successfully.
+16:14:27 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+16:14:27 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+16:14:30 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1489934349000,  Project:1489929157000
+16:14:30 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+16:14:30 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+16:14:36 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:14:37 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-317cf2b058064a89a9a8ca2269084844-rtkit-daemon.service-B3qRDW"
+
+16:14:37 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-317cf2b058064a89a9a8ca2269084844-systemd-timesyncd.service-ryyv1u"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-317cf2b058064a89a9a8ca2269084844-colord.service-VKzSDq"
+
+16:14:37 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+16:14:37 ERROR : Error updating BSP project MSS files.
+16:14:38 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+16:14:38 INFO  : Clearing existing target manager status.
+16:15:01 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+16:15:01 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+16:15:01 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+16:15:01 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+16:15:14 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+16:15:15 INFO  : Bootgen command execution is done.
+16:20:04 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:21:01 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:21:03 INFO  : XSDB server has started successfully.
+17:21:03 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+17:21:03 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+17:21:06 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1489939921000,  Project:1489934349000
+17:21:06 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+17:21:06 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+17:21:12 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:21:13 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-317cf2b058064a89a9a8ca2269084844-rtkit-daemon.service-B3qRDW"
+
+17:21:13 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-317cf2b058064a89a9a8ca2269084844-systemd-timesyncd.service-ryyv1u"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-317cf2b058064a89a9a8ca2269084844-colord.service-VKzSDq"
+
+17:21:13 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+17:21:13 ERROR : Error updating BSP project MSS files.
+17:21:14 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+17:21:14 INFO  : Clearing existing target manager status.
+17:21:22 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+17:21:23 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+17:21:23 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+17:21:23 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+17:21:29 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+17:21:29 INFO  : Bootgen command execution is done.
+17:49:22 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:51:46 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:51:50 INFO  : XSDB server has started successfully.
+21:51:51 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+21:51:51 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+21:51:56 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1490042974000,  Project:1489939921000
+21:51:56 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+21:51:56 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+21:52:02 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:52:03 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-325b889971df4125ad082e0ac1d604db-systemd-timesyncd.service-eVyFqC"
+
+21:52:03 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-325b889971df4125ad082e0ac1d604db-colord.service-gHWPiy"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-325b889971df4125ad082e0ac1d604db-rtkit-daemon.service-rgFt0c"
+
+21:52:03 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+21:52:03 ERROR : Error updating BSP project MSS files.
+21:52:03 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+21:52:03 INFO  : Clearing existing target manager status.
+21:52:13 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+21:52:13 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+21:52:13 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+21:52:13 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+21:52:15 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+21:52:15 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+21:52:16 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+21:52:16 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+22:25:26 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:38:06 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:38:10 INFO  : XSDB server has started successfully.
+20:38:12 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+20:38:12 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+20:38:16 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1490125024000,  Project:1490042974000
+20:38:16 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+20:38:16 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+20:38:22 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:38:23 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-ef974989109c4283a08b6e05b316d9cc-rtkit-daemon.service-3vh9FJ"
+
+20:38:23 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-ef974989109c4283a08b6e05b316d9cc-systemd-timesyncd.service-QmzUze"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-ef974989109c4283a08b6e05b316d9cc-colord.service-NVL099"
+
+20:38:23 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+20:38:23 ERROR : Error updating BSP project MSS files.
+20:38:24 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+20:38:24 INFO  : Clearing existing target manager status.
+20:38:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+20:38:33 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+20:38:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+20:38:33 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+20:38:52 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+20:38:53 INFO  : Bootgen command execution is done.
+20:38:58 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:45:14 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:45:15 INFO  : XSDB server has started successfully.
+21:45:15 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+21:45:15 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+21:45:19 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1490128110000,  Project:1490125024000
+21:45:19 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+21:45:19 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+21:45:25 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:45:26 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-ef974989109c4283a08b6e05b316d9cc-rtkit-daemon.service-3vh9FJ"
+
+21:45:26 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-ef974989109c4283a08b6e05b316d9cc-systemd-timesyncd.service-QmzUze"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-ef974989109c4283a08b6e05b316d9cc-colord.service-NVL099"
+
+21:45:26 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+21:45:26 ERROR : Error updating BSP project MSS files.
+21:45:27 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+21:45:27 INFO  : Clearing existing target manager status.
+21:45:57 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+21:45:57 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+21:45:57 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+21:45:57 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+21:46:09 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+21:46:10 INFO  : Bootgen command execution is done.
+21:46:15 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:16:18 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:16:23 INFO  : XSDB server has started successfully.
+20:16:25 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+20:16:26 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+20:16:30 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1490132433000,  Project:1490128110000
+20:16:30 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+20:16:30 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+20:16:36 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:16:37 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-a105033717a442d5a1e97b1cda8493af-rtkit-daemon.service-2dgpbT"
+
+20:16:37 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-a105033717a442d5a1e97b1cda8493af-systemd-timesyncd.service-hsDTWE"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-a105033717a442d5a1e97b1cda8493af-colord.service-YYBhJF"
+
+20:16:37 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+20:16:37 ERROR : Error updating BSP project MSS files.
+20:16:38 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+20:16:38 INFO  : Clearing existing target manager status.
+20:16:50 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+20:16:51 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+20:16:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+20:16:51 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+20:17:02 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+20:17:03 INFO  : Bootgen command execution is done.
+20:18:01 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:47:52 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:47:54 INFO  : XSDB server has started successfully.
+21:47:54 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+21:47:55 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+21:47:58 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1490214552000,  Project:1490132433000
+21:47:58 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+21:47:58 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+21:48:04 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:48:05 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-a105033717a442d5a1e97b1cda8493af-rtkit-daemon.service-2dgpbT"
+
+21:48:05 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-a105033717a442d5a1e97b1cda8493af-systemd-timesyncd.service-hsDTWE"
+
+21:48:05 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-a105033717a442d5a1e97b1cda8493af-colord.service-YYBhJF"
+
+21:48:06 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+21:48:06 ERROR : Error updating BSP project MSS files.
+21:48:06 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+21:48:06 INFO  : Clearing existing target manager status.
+21:49:10 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+21:49:10 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+21:49:10 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+21:49:10 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+21:49:22 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+21:49:23 INFO  : Bootgen command execution is done.
+21:50:03 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:02:26 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+18:02:30 INFO  : XSDB server has started successfully.
+18:02:32 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:02:32 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+18:02:37 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1490219657000,  Project:1490214552000
+18:02:37 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:02:37 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+18:02:42 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:02:43 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-fafbd64675594953b6c1cc21d1315929-rtkit-daemon.service-RsaFof"
+
+18:02:43 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-fafbd64675594953b6c1cc21d1315929-systemd-timesyncd.service-oxIbXa"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-fafbd64675594953b6c1cc21d1315929-colord.service-e94n42"
+
+18:02:43 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+18:02:43 ERROR : Error updating BSP project MSS files.
+18:02:44 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+18:02:44 INFO  : Clearing existing target manager status.
+18:03:20 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+18:03:20 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+18:03:20 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+18:03:20 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+18:03:36 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+18:03:36 INFO  : Bootgen command execution is done.
+18:03:41 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:01:12 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+19:01:13 INFO  : XSDB server has started successfully.
+19:01:14 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+19:01:14 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+19:01:17 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1490291868000,  Project:1490219657000
+19:01:17 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+19:01:17 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+19:01:23 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:01:24 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-fafbd64675594953b6c1cc21d1315929-rtkit-daemon.service-RsaFof"
+
+19:01:24 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-fafbd64675594953b6c1cc21d1315929-systemd-timesyncd.service-oxIbXa"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-fafbd64675594953b6c1cc21d1315929-colord.service-e94n42"
+
+19:01:24 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+19:01:24 ERROR : Error updating BSP project MSS files.
+19:01:25 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+19:01:25 INFO  : Clearing existing target manager status.
+19:09:01 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+19:09:01 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+19:09:01 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+19:09:01 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+19:09:12 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+19:09:13 INFO  : Bootgen command execution is done.
+19:10:14 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:24:16 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:24:17 INFO  : XSDB server has started successfully.
+21:24:18 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+21:24:18 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+21:24:21 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1490300626000,  Project:1490291868000
+21:24:21 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+21:24:21 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+21:24:28 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:24:29 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-fafbd64675594953b6c1cc21d1315929-rtkit-daemon.service-RsaFof"
+
+21:24:29 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-fafbd64675594953b6c1cc21d1315929-systemd-timesyncd.service-oxIbXa"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-fafbd64675594953b6c1cc21d1315929-colord.service-e94n42"
+
+21:24:29 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+21:24:29 ERROR : Error updating BSP project MSS files.
+21:24:30 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+21:24:30 INFO  : Clearing existing target manager status.
+21:24:53 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+21:24:53 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+21:24:53 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+21:24:53 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+21:25:02 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+21:25:02 INFO  : Bootgen command execution is done.
+21:42:26 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:39:47 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+16:39:50 INFO  : XSDB server has started successfully.
+16:39:51 INFO  : Processing command line option -hwspec /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+16:39:51 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+16:39:56 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1490456320000,  Project:1490300626000
+16:39:56 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+16:39:56 INFO  : Copied contents of /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+16:40:02 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:40:03 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-794daf4f37f44ff894f8308f3d5286e3-systemd-timesyncd.service-3Z8nQi"
+
+16:40:03 ERROR : (XSDB Server)ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-794daf4f37f44ff894f8308f3d5286e3-rtkit-daemon.service-vtKjlO"
+ERROR: [Hsi 55-1433] Error boost::filesystem::directory_iterator::construct: Permission denied: "/tmp/systemd-private-794daf4f37f44ff894f8308f3d5286e3-colord.service-MwdWyd"
+
+16:40:03 ERROR : Failed to call sync_sw_with_hw_change
+Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors.
+
+16:40:03 ERROR : Error updating BSP project MSS files.
+16:40:03 INFO  : Updating hardware inferred compiler options for fsbl-disp-coproc.
+16:40:03 INFO  : Clearing existing target manager status.
+16:40:30 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+16:40:31 ERROR :  [Common 17-39] 'hsi::current_sw_design' failed due to earlier errors.
+16:40:31 ERROR : (XSDB Server)ERROR: [Hsi 55-1558] Software Design system system is not found
+
+16:40:31 INFO  : Unable to read in MSS file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc_bsp/system.mss : null
+16:40:42 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+16:40:42 INFO  : Bootgen command execution is done.
+17:04:06 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

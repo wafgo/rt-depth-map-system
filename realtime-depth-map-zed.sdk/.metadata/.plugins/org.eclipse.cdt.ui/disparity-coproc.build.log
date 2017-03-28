@@ -1,0 +1,19 @@
+18:26:54 **** Build of configuration Debug for project disparity-coproc ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building file: ../src/opencv_hello_world.c
+Invoking: ARM Linux gcc compiler
+arm-xilinx-linux-gnueabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/opencv_hello_world.o" -MMD -MP -MF"src/opencv_hello_world.d" -MT"src/opencv_hello_world.d" -o "src/opencv_hello_world.o" "../src/opencv_hello_world.c"
+../src/opencv_hello_world.c:10:16: fatal error: cv.h: No such file or directory
+ #include <cv.h>
+                ^
+compilation terminated.
+make: *** [src/opencv_hello_world.o] Fehler 1
+src/subdir.mk:21: die Regel für Ziel „src/opencv_hello_world.o“ scheiterte
+
+18:26:54 Build Finished (took 132ms)
+
