@@ -175,6 +175,6 @@ vhdl xil_defaultlib "../../../bd/system/ipshared/xilinx.com/morphological_filter
 vhdl xil_defaultlib "../../../bd/system/ipshared/xilinx.com/morphological_filter_v1_0/hdl/ip/morphological_filter_ap_sitodp_4_no_dsp_64.vhd" 
 vhdl xil_defaultlib "../../../bd/system/ipshared/xilinx.com/morphological_filter_v1_0/hdl/ip/morphological_filter_ap_dmul_4_max_dsp_64.vhd" 
 vhdl xil_defaultlib "../../../bd/system/ip/system_morphological_filter_0_0/sim/system_morphological_filter_0_0.vhd" 
-vhdl xil_defaultlib "../../../bd/system/ip/system_axi_vdma_0_0/sim/system_axi_vdma_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/system/ip/system_axi_vdma_0_1/sim/system_axi_vdma_0_1.vhd" 
 
 nosort

@@ -2,114 +2,118 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Sat Mar 25 16:26:23 2017
-# Process ID: 4710
-# Current directory: /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.runs/impl_1
+# Start of session at: Wed Aug 23 21:06:55 2017
+# Process ID: 8837
+# Current directory: /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.runs/impl_1
 # Command line: vivado -log system_top.vdi -applog -messageDb vivado.pb -mode batch -source system_top.tcl -notrace
-# Log file: /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.runs/impl_1/system_top.vdi
-# Journal file: /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.runs/impl_1/vivado.jou
+# Log file: /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.runs/impl_1/system_top.vdi
+# Journal file: /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source system_top.tcl -notrace
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
-INFO: [Netlist 29-17] Analyzing 3640 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 2539 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2015.4
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc] for cell 'i_system_wrapper/system_i/sys_ps7/inst'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc] for cell 'i_system_wrapper/system_i/sys_ps7/inst'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_main'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_main'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_rstgen'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_board.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc:56]
-INFO: [Timing 38-2] Deriving generated clocks [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc:56]
-get_clocks: Time (s): cpu = 00:00:25 ; elapsed = 00:00:16 . Memory (MB): peak = 1970.926 ; gain = 555.523 ; free physical = 5552 ; free virtual = 15163
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc] for cell 'i_system_wrapper/system_i/sys_audio_clkgen/inst'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_fmc'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc] for cell 'i_system_wrapper/system_i/axi_iic_fmc'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_morphological_filter_0_0/constraints/morphological_filter.xdc] for cell 'i_system_wrapper/system_i/morphological_filter_0/inst'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_morphological_filter_0_0/constraints/morphological_filter.xdc] for cell 'i_system_wrapper/system_i/morphological_filter_0/inst'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_1/system_axi_vdma_0_1.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_0/U0'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_1/system_axi_vdma_0_1.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_0/U0'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/common/xilinx/compression_system_constr.xdc]
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/common/xilinx/compression_system_constr.xdc]
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/common/zed/zed_system_constr.xdc]
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/common/zed/zed_system_constr.xdc]
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_clkgen_0/axi_clkgen_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_clkgen'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_clkgen_0/axi_clkgen_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_clkgen'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_core_0/axi_hdmi_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_core_0/axi_hdmi_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_core'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_hdmi_dma/U0'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_spdif_tx_core_0/axi_spdif_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_spdif_tx_core'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_spdif_tx_core_0/axi_spdif_tx_constr.xdc] for cell 'i_system_wrapper/system_i/axi_spdif_tx_core'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc] for cell 'i_system_wrapper/system_i/axi_i2s_adi'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc] for cell 'i_system_wrapper/system_i/axi_i2s_adi'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_1/system_axi_vdma_0_1_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_0/U0'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_1/system_axi_vdma_0_1_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_vdma_0/U0'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_hp0_interconnect/s01_couplers/auto_us/inst'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_hp0_interconnect/s01_couplers/auto_us/inst'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_mem_intercon/s01_couplers/auto_us/inst'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_mem_intercon/s01_couplers/auto_us/inst'
-Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_2/system_auto_us_2_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_mem_intercon/s02_couplers/auto_us/inst'
-Finished Parsing XDC File [/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_2/system_auto_us_2_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_mem_intercon/s02_couplers/auto_us/inst'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc] for cell 'i_system_wrapper/system_i/sys_ps7/inst'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc] for cell 'i_system_wrapper/system_i/sys_ps7/inst'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc] for cell 'i_system_wrapper/system_i/hdmi/i2c/axi_iic_main'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc] for cell 'i_system_wrapper/system_i/hdmi/i2c/axi_iic_main'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/irq_reset/sys_rstgen'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc] for cell 'i_system_wrapper/system_i/irq_reset/sys_rstgen'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/irq_reset/sys_rstgen'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc] for cell 'i_system_wrapper/system_i/irq_reset/sys_rstgen'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc] for cell 'i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_dma/U0'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc] for cell 'i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_dma/U0'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc] for cell 'i_system_wrapper/system_i/hdmi/i2c/axi_iic_fmc'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc] for cell 'i_system_wrapper/system_i/hdmi/i2c/axi_iic_fmc'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_morphological_filter_0_0/constraints/morphological_filter.xdc] for cell 'i_system_wrapper/system_i/image_processing/morphological_filter_0/inst'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_morphological_filter_0_0/constraints/morphological_filter.xdc] for cell 'i_system_wrapper/system_i/image_processing/morphological_filter_0/inst'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_1/system_axi_vdma_0_1.xdc] for cell 'i_system_wrapper/system_i/image_processing/mf_dma/U0'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_1/system_axi_vdma_0_1.xdc] for cell 'i_system_wrapper/system_i/image_processing/mf_dma/U0'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_2/system_axi_vdma_0_2.xdc] for cell 'i_system_wrapper/system_i/image_processing/sbm_vdma_left_out/U0'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_2/system_axi_vdma_0_2.xdc] for cell 'i_system_wrapper/system_i/image_processing/sbm_vdma_left_out/U0'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc] for cell 'i_system_wrapper/system_i/image_processing/sbm_vdma_right_in/U0'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc] for cell 'i_system_wrapper/system_i/image_processing/sbm_vdma_right_in/U0'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_stereo_matcher_0_0/constraints/stereo_matcher.xdc] for cell 'i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_stereo_matcher_0_0/constraints/stereo_matcher.xdc] for cell 'i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/imports/hdl/projects/common/xilinx/compression_system_constr.xdc]
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/imports/hdl/projects/common/xilinx/compression_system_constr.xdc]
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/imports/hdl/projects/common/zed/zed_system_constr.xdc]
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/imports/hdl/projects/common/zed/zed_system_constr.xdc]
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_clkgen_0/axi_clkgen_constr.xdc] for cell 'i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_clkgen'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_clkgen_0/axi_clkgen_constr.xdc] for cell 'i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_clkgen'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_core_0/axi_hdmi_tx_constr.xdc] for cell 'i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_core_0/axi_hdmi_tx_constr.xdc] for cell 'i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc] for cell 'i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc] for cell 'i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_clocks.xdc] for cell 'i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_dma/U0'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_clocks.xdc] for cell 'i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_dma/U0'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_1/system_axi_vdma_0_1_clocks.xdc] for cell 'i_system_wrapper/system_i/image_processing/mf_dma/U0'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_1/system_axi_vdma_0_1_clocks.xdc] for cell 'i_system_wrapper/system_i/image_processing/mf_dma/U0'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_2/system_axi_vdma_0_2_clocks.xdc] for cell 'i_system_wrapper/system_i/image_processing/sbm_vdma_left_out/U0'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_2/system_axi_vdma_0_2_clocks.xdc] for cell 'i_system_wrapper/system_i/image_processing/sbm_vdma_left_out/U0'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/image_processing/sbm_vdma_right_in/U0'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_clocks.xdc] for cell 'i_system_wrapper/system_i/image_processing/sbm_vdma_right_in/U0'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect/axi_hp0_interconnect/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect/axi_hp0_interconnect/s01_couplers/auto_us/inst'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect/axi_hp0_interconnect/s02_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect/axi_hp0_interconnect/s02_couplers/auto_us/inst'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_2/system_auto_us_2_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect/axi_hp0_interconnect/s03_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_2/system_auto_us_2_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect/axi_hp0_interconnect/s03_couplers/auto_us/inst'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_3/system_auto_us_3_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect/axi_mem_intercon/s01_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_3/system_auto_us_3_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect/axi_mem_intercon/s01_couplers/auto_us/inst'
+Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_4/system_auto_us_4_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect/axi_mem_intercon/s02_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_4/system_auto_us_4_clocks.xdc] for cell 'i_system_wrapper/system_i/axi_interconnect/axi_mem_intercon/s02_couplers/auto_us/inst'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_e_reg has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_e_reg cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_e_reg has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_e_reg cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[0] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[0] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[0] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[0] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[2] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[2] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[2] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[2] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[3] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[3] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[3] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[3] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[4] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[4] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[4] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[4] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[5] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[5] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[5] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[5] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[6] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[6] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[6] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[6] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[7] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[7] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[7] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[7] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[8] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[8] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[8] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[8] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[9] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[9] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[9] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[9] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[10] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[10] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[10] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[10] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[11] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[11] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[11] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[11] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[12] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[12] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[12] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[12] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[13] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[13] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[13] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[13] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[14] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[14] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[14] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[14] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[15] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[15] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
-WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[15] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[15] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_e_reg has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_e_reg cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_e_reg has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_e_reg cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[0] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[0] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[0] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[0] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[1] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[1] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[2] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[2] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[2] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[2] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[3] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[3] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[3] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[3] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[4] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[4] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[4] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[4] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[5] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[5] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[5] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[5] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[6] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[6] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[6] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[6] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[7] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[7] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[7] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[7] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[8] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[8] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[8] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[8] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[9] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[9] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[9] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[9] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[10] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[10] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[10] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[10] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[11] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[11] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[11] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[11] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[12] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[12] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[12] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[12] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[13] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[13] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[13] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[13] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[14] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[14] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[14] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[14] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[15] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[15] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
+WARNING: [Shape Builder 18-132] Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[15] has IOB = TRUE property, but it cannot be placed in an OLOGIC site. Instance i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/hdmi_16_data_reg[15] cannot be placed in site OLOGIC_X0Y0 because the output signal of the cell requires general routing to fabric and cells placed in OLOGIC can only be routed to delay or I/O site.
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 62 instances were transformed.
+  A total of 50 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 38 instances
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 22 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 10 instances
   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 2 instances
 
-link_design: Time (s): cpu = 00:01:00 ; elapsed = 00:00:47 . Memory (MB): peak = 1974.926 ; gain = 1061.891 ; free physical = 5562 ; free virtual = 15152
+link_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1423.352 ; gain = 510.320 ; free physical = 5920 ; free virtual = 16391
 Command: opt_design -directive Explore
 INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2017.05' and will expire in -84 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 Running DRC as a precondition to command opt_design
 
 Starting DRC Task
@@ -117,89 +121,91 @@ INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.91 . Memory (MB): peak = 2046.961 ; gain = 64.031 ; free physical = 5562 ; free virtual = 15152
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.84 . Memory (MB): peak = 1498.059 ; gain = 66.703 ; free physical = 5918 ; free virtual = 16389
 INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
 
 Starting Logic Optimization Task
-Implement Debug Cores | Checksum: 1d56808b5
+Implement Debug Cores | Checksum: e8e27db4
 
 Phase 1 Retarget
-INFO: [Opt 31-138] Pushed 9 inverter(s) to 11 load pin(s).
+INFO: [Opt 31-138] Pushed 8 inverter(s) to 11 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 14302aeba
+Phase 1 Retarget | Checksum: da15377b
 
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2046.961 ; gain = 0.000 ; free physical = 5548 ; free virtual = 15138
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1976.551 ; gain = 1.000 ; free physical = 5473 ; free virtual = 15944
 
 Phase 2 Constant Propagation
-INFO: [Opt 31-138] Pushed 4 inverter(s) to 5 load pin(s).
-INFO: [Opt 31-10] Eliminated 654 cells.
-Phase 2 Constant Propagation | Checksum: 12da8cc62
+INFO: [Opt 31-138] Pushed 5 inverter(s) to 7 load pin(s).
+INFO: [Opt 31-10] Eliminated 1004 cells.
+Phase 2 Constant Propagation | Checksum: 10d3f9fae
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2046.961 ; gain = 0.000 ; free physical = 5546 ; free virtual = 15137
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1976.551 ; gain = 1.000 ; free physical = 5471 ; free virtual = 15942
 
 Phase 3 Sweep
-INFO: [Opt 31-12] Eliminated 11204 unconnected nets.
-INFO: [Opt 31-11] Eliminated 1238 unconnected cells.
-Phase 3 Sweep | Checksum: 1d2c0b98e
+INFO: [Opt 31-12] Eliminated 10358 unconnected nets.
+INFO: [Opt 31-11] Eliminated 1827 unconnected cells.
+Phase 3 Sweep | Checksum: 1b19df8db
 
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 2046.961 ; gain = 0.000 ; free physical = 5546 ; free virtual = 15137
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:27 . Memory (MB): peak = 1976.551 ; gain = 1.000 ; free physical = 5469 ; free virtual = 15940
 
 Phase 4 Constant Propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-10] Eliminated 0 cells.
-Phase 4 Constant Propagation | Checksum: 151abd44c
+Phase 4 Constant Propagation | Checksum: 1e3ea307e
 
-Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 2046.961 ; gain = 0.000 ; free physical = 5547 ; free virtual = 15137
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1976.551 ; gain = 1.000 ; free physical = 5467 ; free virtual = 15938
 
 Phase 5 Sweep
 INFO: [Opt 31-12] Eliminated 7 unconnected nets.
 INFO: [Opt 31-11] Eliminated 15 unconnected cells.
-Phase 5 Sweep | Checksum: 1e550f36b
+Phase 5 Sweep | Checksum: 255ffeb91
 
-Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2046.961 ; gain = 0.000 ; free physical = 5547 ; free virtual = 15138
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1976.551 ; gain = 1.000 ; free physical = 5466 ; free virtual = 15937
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.27 . Memory (MB): peak = 2046.961 ; gain = 0.000 ; free physical = 5547 ; free virtual = 15138
-Ending Logic Optimization Task | Checksum: 1e550f36b
+Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.27 . Memory (MB): peak = 1976.551 ; gain = 0.000 ; free physical = 5466 ; free virtual = 15937
+Ending Logic Optimization Task | Checksum: 255ffeb91
 
-Time (s): cpu = 00:00:48 ; elapsed = 00:00:48 . Memory (MB): peak = 2046.961 ; gain = 0.000 ; free physical = 5547 ; free virtual = 15137
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:40 . Memory (MB): peak = 1976.551 ; gain = 1.000 ; free physical = 5466 ; free virtual = 15937
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
 INFO: [Pwropt 34-9] Applying IDT optimizations ...
 INFO: [Pwropt 34-10] Applying ODC optimizations ...
-Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
 
 
 Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 65 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 3 BRAM(s) out of a total of 99 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
 INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 3 newly gated: 1 Total Ports: 130
-Ending PowerOpt Patch Enables Task | Checksum: 22634bcad
+Number of BRAM Ports augmented: 48 newly gated: 1 Total Ports: 198
+Ending PowerOpt Patch Enables Task | Checksum: 1c6535812
 
-Time (s): cpu = 00:00:00.88 ; elapsed = 00:00:00.74 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5108 ; free virtual = 14704
-Ending Power Optimization Task | Checksum: 22634bcad
+Time (s): cpu = 00:00:00.43 ; elapsed = 00:00:00.35 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4967 ; free virtual = 15438
+Ending Power Optimization Task | Checksum: 1c6535812
 
-Time (s): cpu = 00:00:51 ; elapsed = 00:00:23 . Memory (MB): peak = 2528.984 ; gain = 482.023 ; free physical = 5108 ; free virtual = 14704
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:30 . Memory (MB): peak = 2585.688 ; gain = 609.137 ; free physical = 4967 ; free virtual = 15438
 INFO: [Common 17-83] Releasing license: Implementation
 32 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:01:52 ; elapsed = 00:01:15 . Memory (MB): peak = 2528.984 ; gain = 554.059 ; free physical = 5108 ; free virtual = 14704
+opt_design: Time (s): cpu = 00:02:28 ; elapsed = 00:01:36 . Memory (MB): peak = 2585.688 ; gain = 1162.336 ; free physical = 4967 ; free virtual = 15438
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5106 ; free virtual = 14705
-write_checkpoint: Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5086 ; free virtual = 14696
+Write XDEF Complete: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4965 ; free virtual = 15439
+write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4951 ; free virtual = 15437
 INFO: [DRC 23-27] Running DRC with 8 threads
-INFO: [Coretcl 2-168] The results of DRC are in file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.runs/impl_1/system_top_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.runs/impl_1/system_top_drc_opted.rpt.
 Command: place_design -directive Explore
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2017.05' and will expire in -84 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
@@ -213,17 +219,17 @@ INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
 INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
 
 Phase 1 Placer Initialization
-Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5083 ; free virtual = 14697
+Netlist sorting complete. Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.32 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4946 ; free virtual = 15432
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Opt 31-138] Pushed 3 inverter(s) to 4 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5082 ; free virtual = 14696
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4944 ; free virtual = 15431
 
 Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
 
 Phase 1.1.1 Pre-Place Cells
-Phase 1.1.1 Pre-Place Cells | Checksum: 86498748
+Phase 1.1.1 Pre-Place Cells | Checksum: dc0a2101
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5082 ; free virtual = 14696
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:12 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4944 ; free virtual = 15431
 WARNING: [Place 30-12] An IO Bus fixed_io_mio with more than one IO standard is found. Components associated with this bus are: 
 	fixed_io_mio[53] of IOStandard LVCMOS18
 	fixed_io_mio[52] of IOStandard LVCMOS18
@@ -315,248 +321,250 @@ WARNING: [Place 30-12] An IO Bus gpio_bd with more than one IO standard is found
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 1.1.2 IO and Clk Clean Up
-Phase 1.1.2 IO and Clk Clean Up | Checksum: 86498748
+Phase 1.1.2 IO and Clk Clean Up | Checksum: dc0a2101
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:32 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5074 ; free virtual = 14693
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:29 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4943 ; free virtual = 15430
 
 Phase 1.1.3 Implementation Feasibility check On IDelay
-Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: 86498748
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: dc0a2101
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:33 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5074 ; free virtual = 14693
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:29 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4944 ; free virtual = 15431
 
 Phase 1.1.4 Commit IO Placement
-Phase 1.1.4 Commit IO Placement | Checksum: 06e7c6e2
+Phase 1.1.4 Commit IO Placement | Checksum: 8565ec8b
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:33 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5074 ; free virtual = 14693
-Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: fb2afc60
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:29 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4944 ; free virtual = 15431
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 12c54434a
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:33 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5074 ; free virtual = 14693
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:29 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4944 ; free virtual = 15431
 
 Phase 1.2 Build Placer Netlist Model
 
 Phase 1.2.1 Place Init Design
 
 Phase 1.2.1.1 Init Lut Pin Assignment
-Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: fc8450ce
+Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: 1ecc0dfab
 
-Time (s): cpu = 00:00:57 ; elapsed = 00:00:37 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5057 ; free virtual = 14678
-Phase 1.2.1 Place Init Design | Checksum: 1390287fa
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:33 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4942 ; free virtual = 15428
+Phase 1.2.1 Place Init Design | Checksum: 1da9e72ad
 
-Time (s): cpu = 00:01:38 ; elapsed = 00:00:58 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5054 ; free virtual = 14676
-Phase 1.2 Build Placer Netlist Model | Checksum: 1390287fa
+Time (s): cpu = 00:01:43 ; elapsed = 00:00:54 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4939 ; free virtual = 15426
+Phase 1.2 Build Placer Netlist Model | Checksum: 1da9e72ad
 
-Time (s): cpu = 00:01:39 ; elapsed = 00:00:58 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5054 ; free virtual = 14676
+Time (s): cpu = 00:01:43 ; elapsed = 00:00:54 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4939 ; free virtual = 15426
 
 Phase 1.3 Constrain Clocks/Macros
 
 Phase 1.3.1 Constrain Global/Regional Clocks
-Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: 1390287fa
+Phase 1.3.1 Constrain Global/Regional Clocks | Checksum: 1da9e72ad
 
-Time (s): cpu = 00:01:39 ; elapsed = 00:00:59 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5054 ; free virtual = 14677
-Phase 1.3 Constrain Clocks/Macros | Checksum: 1390287fa
+Time (s): cpu = 00:01:43 ; elapsed = 00:00:54 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4939 ; free virtual = 15426
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1da9e72ad
 
-Time (s): cpu = 00:01:39 ; elapsed = 00:00:59 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5054 ; free virtual = 14677
-Phase 1 Placer Initialization | Checksum: 1390287fa
+Time (s): cpu = 00:01:43 ; elapsed = 00:00:54 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4939 ; free virtual = 15426
+Phase 1 Placer Initialization | Checksum: 1da9e72ad
 
-Time (s): cpu = 00:01:39 ; elapsed = 00:00:59 . Memory (MB): peak = 2528.984 ; gain = 0.000 ; free physical = 5054 ; free virtual = 14677
+Time (s): cpu = 00:01:43 ; elapsed = 00:00:54 . Memory (MB): peak = 2585.688 ; gain = 0.000 ; free physical = 4939 ; free virtual = 15426
 
 Phase 2 Global Placement
-Phase 2 Global Placement | Checksum: 1fe6fe8f0
+Phase 2 Global Placement | Checksum: 1664b3157
 
-Time (s): cpu = 00:03:55 ; elapsed = 00:02:04 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5145 ; free virtual = 14769
+Time (s): cpu = 00:03:52 ; elapsed = 00:01:55 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4934 ; free virtual = 15421
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 1fe6fe8f0
+Phase 3.1 Commit Multi Column Macros | Checksum: 1664b3157
 
-Time (s): cpu = 00:03:56 ; elapsed = 00:02:04 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5145 ; free virtual = 14769
+Time (s): cpu = 00:03:52 ; elapsed = 00:01:55 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4934 ; free virtual = 15421
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 193d2748c
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 154e8db7c
 
-Time (s): cpu = 00:04:48 ; elapsed = 00:02:28 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5144 ; free virtual = 14767
+Time (s): cpu = 00:04:47 ; elapsed = 00:02:18 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4997 ; free virtual = 15484
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1a3cb2eb7
+Phase 3.3 Area Swap Optimization | Checksum: 18f3ffcff
 
-Time (s): cpu = 00:04:50 ; elapsed = 00:02:29 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5144 ; free virtual = 14767
+Time (s): cpu = 00:04:49 ; elapsed = 00:02:20 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4998 ; free virtual = 15485
 
 Phase 3.4 updateClock Trees: DP
-Phase 3.4 updateClock Trees: DP | Checksum: 1a3cb2eb7
+Phase 3.4 updateClock Trees: DP | Checksum: 18f3ffcff
 
-Time (s): cpu = 00:04:50 ; elapsed = 00:02:29 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5144 ; free virtual = 14767
+Time (s): cpu = 00:04:49 ; elapsed = 00:02:20 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4998 ; free virtual = 15485
 
 Phase 3.5 Timing Path Optimizer
-Phase 3.5 Timing Path Optimizer | Checksum: 160eeb38b
+Phase 3.5 Timing Path Optimizer | Checksum: 184fdea60
 
-Time (s): cpu = 00:04:59 ; elapsed = 00:02:32 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5144 ; free virtual = 14767
+Time (s): cpu = 00:04:58 ; elapsed = 00:02:22 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4998 ; free virtual = 15485
 
 Phase 3.6 Fast Optimization
-Phase 3.6 Fast Optimization | Checksum: 160eeb38b
+Phase 3.6 Fast Optimization | Checksum: 184fdea60
 
-Time (s): cpu = 00:05:00 ; elapsed = 00:02:33 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5143 ; free virtual = 14767
+Time (s): cpu = 00:04:58 ; elapsed = 00:02:23 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4998 ; free virtual = 15485
 
 Phase 3.7 Small Shape Detail Placement
 
 Phase 3.7.1 Commit Small Macros and Core Logic
 
 Phase 3.7.1.1 Commit Slice Clusters
-Phase 3.7.1.1 Commit Slice Clusters | Checksum: f78b78b6
+Phase 3.7.1.1 Commit Slice Clusters | Checksum: fa2dfeed
 
-Time (s): cpu = 00:05:28 ; elapsed = 00:03:00 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5135 ; free virtual = 14759
-Phase 3.7.1 Commit Small Macros and Core Logic | Checksum: f78b78b6
+Time (s): cpu = 00:05:27 ; elapsed = 00:02:50 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4976 ; free virtual = 15463
+Phase 3.7.1 Commit Small Macros and Core Logic | Checksum: fa2dfeed
 
-Time (s): cpu = 00:05:29 ; elapsed = 00:03:00 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5135 ; free virtual = 14759
+Time (s): cpu = 00:05:28 ; elapsed = 00:02:51 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4976 ; free virtual = 15463
 
 Phase 3.7.2 Clock Restriction Legalization for Leaf Columns
-Phase 3.7.2 Clock Restriction Legalization for Leaf Columns | Checksum: f78b78b6
+Phase 3.7.2 Clock Restriction Legalization for Leaf Columns | Checksum: fa2dfeed
 
-Time (s): cpu = 00:05:30 ; elapsed = 00:03:01 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5131 ; free virtual = 14755
+Time (s): cpu = 00:05:29 ; elapsed = 00:02:51 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4974 ; free virtual = 15461
 
 Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins
-Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: f78b78b6
+Phase 3.7.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: fa2dfeed
 
-Time (s): cpu = 00:05:31 ; elapsed = 00:03:02 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5128 ; free virtual = 14752
-Phase 3.7 Small Shape Detail Placement | Checksum: f78b78b6
+Time (s): cpu = 00:05:30 ; elapsed = 00:02:52 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4972 ; free virtual = 15459
+Phase 3.7 Small Shape Detail Placement | Checksum: fa2dfeed
 
-Time (s): cpu = 00:05:31 ; elapsed = 00:03:03 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5129 ; free virtual = 14753
+Time (s): cpu = 00:05:31 ; elapsed = 00:02:53 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4972 ; free virtual = 15459
 
 Phase 3.8 Re-assign LUT pins
-Phase 3.8 Re-assign LUT pins | Checksum: 117b86a89
+Phase 3.8 Re-assign LUT pins | Checksum: 1a6da82f7
 
-Time (s): cpu = 00:05:35 ; elapsed = 00:03:06 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5125 ; free virtual = 14749
-Phase 3 Detail Placement | Checksum: 117b86a89
+Time (s): cpu = 00:05:34 ; elapsed = 00:02:56 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4972 ; free virtual = 15459
+Phase 3 Detail Placement | Checksum: 1a6da82f7
 
-Time (s): cpu = 00:05:35 ; elapsed = 00:03:06 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5128 ; free virtual = 14752
+Time (s): cpu = 00:05:34 ; elapsed = 00:02:57 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4972 ; free virtual = 15459
 
 Phase 4 Post Placement Optimization and Clean-Up
 
 Phase 4.1 Post Commit Optimization
 
 Phase 4.1.1 callUpdateTimingBeforePCO
-Phase 4.1.1 callUpdateTimingBeforePCO | Checksum: 1a810d7df
+Phase 4.1.1 callUpdateTimingBeforePCO | Checksum: 2565e6a59
 
-Time (s): cpu = 00:06:15 ; elapsed = 00:03:20 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5129 ; free virtual = 14754
+Time (s): cpu = 00:06:09 ; elapsed = 00:03:07 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4972 ; free virtual = 15459
 
 Phase 4.1.2 updateClock Trees: PCOPT
-Phase 4.1.2 updateClock Trees: PCOPT | Checksum: 1a810d7df
+Phase 4.1.2 updateClock Trees: PCOPT | Checksum: 2565e6a59
 
-Time (s): cpu = 00:06:17 ; elapsed = 00:03:21 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5129 ; free virtual = 14754
+Time (s): cpu = 00:06:10 ; elapsed = 00:03:08 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4972 ; free virtual = 15459
 
 Phase 4.1.3 Post Placement Optimization
 
 Phase 4.1.3.1 PCOPT Shape updates
 
 Phase 4.1.3.1.1 removeOptionalFFsFromShapes
-Phase 4.1.3.1.1 removeOptionalFFsFromShapes | Checksum: 1a810d7df
+Phase 4.1.3.1.1 removeOptionalFFsFromShapes | Checksum: 2565e6a59
 
-Time (s): cpu = 00:06:18 ; elapsed = 00:03:23 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5129 ; free virtual = 14754
+Time (s): cpu = 00:06:11 ; elapsed = 00:03:10 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4972 ; free virtual = 15459
 
 Phase 4.1.3.1.2 deleteLutnmShapes
 
 Phase 4.1.3.1.2.1 deleteShapes
-Phase 4.1.3.1.2.1 deleteShapes | Checksum: 147ae5b24
+Phase 4.1.3.1.2.1 deleteShapes | Checksum: 203734ce3
 
-Time (s): cpu = 00:06:20 ; elapsed = 00:03:24 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5125 ; free virtual = 14750
-Phase 4.1.3.1.2 deleteLutnmShapes | Checksum: 147ae5b24
+Time (s): cpu = 00:06:14 ; elapsed = 00:03:11 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4968 ; free virtual = 15455
+Phase 4.1.3.1.2 deleteLutnmShapes | Checksum: 203734ce3
 
-Time (s): cpu = 00:06:20 ; elapsed = 00:03:24 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5126 ; free virtual = 14750
-Phase 4.1.3.1 PCOPT Shape updates | Checksum: 147ae5b24
+Time (s): cpu = 00:06:15 ; elapsed = 00:03:12 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4968 ; free virtual = 15455
+Phase 4.1.3.1 PCOPT Shape updates | Checksum: 203734ce3
 
-Time (s): cpu = 00:06:21 ; elapsed = 00:03:25 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5126 ; free virtual = 14750
+Time (s): cpu = 00:06:15 ; elapsed = 00:03:13 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4967 ; free virtual = 15454
 
 Phase 4.1.3.2 Post Placement Timing Optimization
 
 Phase 4.1.3.2.1 Restore Best Placement
-Phase 4.1.3.2.1 Restore Best Placement | Checksum: 1dff63fde
+Phase 4.1.3.2.1 Restore Best Placement | Checksum: 12d0f6f74
 
-Time (s): cpu = 00:06:23 ; elapsed = 00:03:28 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5119 ; free virtual = 14743
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.561. For the most accurate timing information please run report_timing.
-Phase 4.1.3.2 Post Placement Timing Optimization | Checksum: 1dff63fde
+Time (s): cpu = 00:06:19 ; elapsed = 00:03:16 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4968 ; free virtual = 15455
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.571. For the most accurate timing information please run report_timing.
+Phase 4.1.3.2 Post Placement Timing Optimization | Checksum: 12d0f6f74
 
-Time (s): cpu = 00:06:24 ; elapsed = 00:03:28 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5118 ; free virtual = 14743
-Phase 4.1.3 Post Placement Optimization | Checksum: 1dff63fde
+Time (s): cpu = 00:06:19 ; elapsed = 00:03:17 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4968 ; free virtual = 15455
+Phase 4.1.3 Post Placement Optimization | Checksum: 12d0f6f74
 
-Time (s): cpu = 00:06:25 ; elapsed = 00:03:29 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5118 ; free virtual = 14742
-Phase 4.1 Post Commit Optimization | Checksum: 1dff63fde
+Time (s): cpu = 00:06:20 ; elapsed = 00:03:18 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4968 ; free virtual = 15455
+Phase 4.1 Post Commit Optimization | Checksum: 12d0f6f74
 
-Time (s): cpu = 00:06:25 ; elapsed = 00:03:29 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5118 ; free virtual = 14742
+Time (s): cpu = 00:06:20 ; elapsed = 00:03:18 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4968 ; free virtual = 15455
 
 Phase 4.2 Sweep Clock Roots: Post-Placement
-Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 1dff63fde
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 12d0f6f74
 
-Time (s): cpu = 00:06:26 ; elapsed = 00:03:30 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5118 ; free virtual = 14742
+Time (s): cpu = 00:06:21 ; elapsed = 00:03:19 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4968 ; free virtual = 15455
 
 Phase 4.3 Post Placement Cleanup
-Phase 4.3 Post Placement Cleanup | Checksum: 1dff63fde
+Phase 4.3 Post Placement Cleanup | Checksum: 12d0f6f74
 
-Time (s): cpu = 00:06:26 ; elapsed = 00:03:31 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5117 ; free virtual = 14742
+Time (s): cpu = 00:06:21 ; elapsed = 00:03:19 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4968 ; free virtual = 15455
 
 Phase 4.4 Placer Reporting
 
 Phase 4.4.1 Restore STA
-Phase 4.4.1 Restore STA | Checksum: 1dff63fde
+Phase 4.4.1 Restore STA | Checksum: 12d0f6f74
 
-Time (s): cpu = 00:06:27 ; elapsed = 00:03:31 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5117 ; free virtual = 14741
-Phase 4.4 Placer Reporting | Checksum: 1dff63fde
+Time (s): cpu = 00:06:22 ; elapsed = 00:03:20 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4968 ; free virtual = 15455
+Phase 4.4 Placer Reporting | Checksum: 12d0f6f74
 
-Time (s): cpu = 00:06:28 ; elapsed = 00:03:32 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5118 ; free virtual = 14743
+Time (s): cpu = 00:06:23 ; elapsed = 00:03:21 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4968 ; free virtual = 15455
 
 Phase 4.5 Final Placement Cleanup
-Phase 4.5 Final Placement Cleanup | Checksum: 19a3c5a68
+Phase 4.5 Final Placement Cleanup | Checksum: e22d13b5
 
-Time (s): cpu = 00:06:28 ; elapsed = 00:03:33 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5118 ; free virtual = 14743
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 19a3c5a68
+Time (s): cpu = 00:06:23 ; elapsed = 00:03:21 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4968 ; free virtual = 15455
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: e22d13b5
 
-Time (s): cpu = 00:06:29 ; elapsed = 00:03:33 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5118 ; free virtual = 14743
-Ending Placer Task | Checksum: 15916d0c4
+Time (s): cpu = 00:06:24 ; elapsed = 00:03:22 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4968 ; free virtual = 15455
+Ending Placer Task | Checksum: afa1a5a8
 
-Time (s): cpu = 00:06:29 ; elapsed = 00:03:33 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5118 ; free virtual = 14743
+Time (s): cpu = 00:06:24 ; elapsed = 00:03:22 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4968 ; free virtual = 15455
 INFO: [Common 17-83] Releasing license: Implementation
-48 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
+49 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:06:37 ; elapsed = 00:03:37 . Memory (MB): peak = 2568.023 ; gain = 39.039 ; free physical = 5118 ; free virtual = 14743
+place_design: Time (s): cpu = 00:06:36 ; elapsed = 00:03:29 . Memory (MB): peak = 2624.730 ; gain = 39.043 ; free physical = 4968 ; free virtual = 15455
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 5019 ; free virtual = 14741
-write_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 5094 ; free virtual = 14741
-report_io: Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.30 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 5093 ; free virtual = 14740
-report_utilization: Time (s): cpu = 00:00:00.74 ; elapsed = 00:00:00.81 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 5093 ; free virtual = 14740
-report_control_sets: Time (s): cpu = 00:00:00.43 ; elapsed = 00:00:00.50 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 5092 ; free virtual = 14740
+Write XDEF Complete: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4865 ; free virtual = 15454
+write_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4945 ; free virtual = 15455
+report_io: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.28 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4943 ; free virtual = 15453
+report_utilization: Time (s): cpu = 00:00:00.68 ; elapsed = 00:00:00.77 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4942 ; free virtual = 15452
+report_control_sets: Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.48 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4940 ; free virtual = 15452
 Command: phys_opt_design -directive Explore
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2017.05' and will expire in -84 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
 
 Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
-Phase 1 Physical Synthesis Initialization | Checksum: 24f663177
+Phase 1 Physical Synthesis Initialization | Checksum: 1dedca368
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:17 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 5090 ; free virtual = 14738
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:17 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4940 ; free virtual = 15452
 INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.500 ns. Skipping all physical synthesis optimizations.
 INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
-Ending Physical Synthesis Task | Checksum: 28faf0fa0
------ Checksum: : 1d95a18b9 : b654f6e7 
+Ending Physical Synthesis Task | Checksum: 268e40fca
+----- Checksum: : 1b62b2bf3 : b2b8e3d7 
 
-Time (s): cpu = 00:00:57 ; elapsed = 00:00:21 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 5089 ; free virtual = 14738
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:21 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4940 ; free virtual = 15452
 INFO: [Common 17-83] Releasing license: Implementation
-54 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
+56 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
-phys_opt_design: Time (s): cpu = 00:01:06 ; elapsed = 00:00:31 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 5090 ; free virtual = 14738
+phys_opt_design: Time (s): cpu = 00:01:00 ; elapsed = 00:00:30 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4940 ; free virtual = 15452
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 4993 ; free virtual = 14735
-write_checkpoint: Time (s): cpu = 00:00:35 ; elapsed = 00:00:21 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 5014 ; free virtual = 14728
+Write XDEF Complete: Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4842 ; free virtual = 15450
+write_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4914 ; free virtual = 15449
 Command: route_design -directive Explore
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2017.05' and will expire in -84 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 Running DRC as a precondition to command route_design
 INFO: [DRC 23-27] Running DRC with 8 threads
 WARNING: [DRC 23-20] Rule violation (PLIO-7) Placement Constraints Check for IO constraints - An IO Bus fixed_io_mio[53:0] with more than one IO standard is found. Components associated with this bus are: LVCMOS18 (fixed_io_mio[53], fixed_io_mio[52], fixed_io_mio[51], fixed_io_mio[50], fixed_io_mio[49], fixed_io_mio[48], fixed_io_mio[47], fixed_io_mio[46], fixed_io_mio[45], fixed_io_mio[44], fixed_io_mio[43], fixed_io_mio[42], fixed_io_mio[41], fixed_io_mio[40], fixed_io_mio[39] (the first 15 of 38 listed)); LVCMOS33 (fixed_io_mio[15], fixed_io_mio[14], fixed_io_mio[13], fixed_io_mio[12], fixed_io_mio[11], fixed_io_mio[10], fixed_io_mio[9], fixed_io_mio[8], fixed_io_mio[7], fixed_io_mio[6], fixed_io_mio[5], fixed_io_mio[4], fixed_io_mio[3], fixed_io_mio[2], fixed_io_mio[1] (the first 15 of 16 listed)); 
@@ -568,130 +576,133 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 Starting Routing Task
 INFO: [Route 35-270] Using Router directive 'Explore'.
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
-Checksum: PlaceDB: ba096abb ConstDB: 0 ShapeSum: 6e069cf0 RouteDB: b654f6e7
+Checksum: PlaceDB: 7d2b542a ConstDB: 0 ShapeSum: c3ec6601 RouteDB: b2b8e3d7
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 7f45a26f
+Phase 1 Build RT Design | Checksum: c867e54c
 
-Time (s): cpu = 00:00:57 ; elapsed = 00:00:33 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 4069 ; free virtual = 14540
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:32 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4914 ; free virtual = 15448
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 7f45a26f
+Phase 2.1 Create Timer | Checksum: c867e54c
 
-Time (s): cpu = 00:00:59 ; elapsed = 00:00:35 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 4200 ; free virtual = 14704
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:34 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4914 ; free virtual = 15448
 
 Phase 2.2 Pre Route Cleanup
-Phase 2.2 Pre Route Cleanup | Checksum: 7f45a26f
+Phase 2.2 Pre Route Cleanup | Checksum: c867e54c
 
-Time (s): cpu = 00:00:59 ; elapsed = 00:00:35 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 4192 ; free virtual = 14699
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:34 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4910 ; free virtual = 15444
  Number of Nodes with overlaps = 0
 
 Phase 2.3 Update Timing
-Phase 2.3 Update Timing | Checksum: 102bba22d
+Phase 2.3 Update Timing | Checksum: c84b962e
 
-Time (s): cpu = 00:02:22 ; elapsed = 00:00:59 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 4080 ; free virtual = 14604
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.777  | TNS=0.000  | WHS=-0.352 | THS=-1018.327|
+Time (s): cpu = 00:01:52 ; elapsed = 00:00:51 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4879 ; free virtual = 15414
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.632  | TNS=0.000  | WHS=-0.359 | THS=-1063.568|
 
-Phase 2 Router Initialization | Checksum: 14cf4fcac
+Phase 2 Router Initialization | Checksum: b327112e
 
-Time (s): cpu = 00:02:56 ; elapsed = 00:01:07 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 4070 ; free virtual = 14594
+Time (s): cpu = 00:02:36 ; elapsed = 00:01:02 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4879 ; free virtual = 15414
 
 Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 160b8a9f9
+Phase 3 Initial Routing | Checksum: 17f847ba6
 
-Time (s): cpu = 00:04:08 ; elapsed = 00:01:22 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 4070 ; free virtual = 14595
+Time (s): cpu = 00:03:05 ; elapsed = 00:01:08 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4878 ; free virtual = 15413
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 8561
- Number of Nodes with overlaps = 706
- Number of Nodes with overlaps = 152
- Number of Nodes with overlaps = 14
- Number of Nodes with overlaps = 2
- Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 8867
+ Number of Nodes with overlaps = 730
+ Number of Nodes with overlaps = 130
+ Number of Nodes with overlaps = 32
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
 
 Phase 4.1.1 Update Timing
-Phase 4.1.1 Update Timing | Checksum: 16e02b560
+Phase 4.1.1 Update Timing | Checksum: 175cdf58d
 
-Time (s): cpu = 00:07:35 ; elapsed = 00:02:00 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3794 ; free virtual = 14398
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.136  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:05:39 ; elapsed = 00:01:37 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.268  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 23e133c2b
+Phase 4.1 Global Iteration 0 | Checksum: 1ce7a4264
 
-Time (s): cpu = 00:07:39 ; elapsed = 00:02:02 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3796 ; free virtual = 14400
+Time (s): cpu = 00:05:43 ; elapsed = 00:01:39 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
 
 Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 28
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
 
 Phase 4.2.1 Update Timing
-Phase 4.2.1 Update Timing | Checksum: 294454660
+Phase 4.2.1 Update Timing | Checksum: 1599f16e7
 
-Time (s): cpu = 00:07:53 ; elapsed = 00:02:07 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3810 ; free virtual = 14415
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.136  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:06:03 ; elapsed = 00:01:49 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.268  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 4.2 Global Iteration 1 | Checksum: 293767abb
+Phase 4.2 Global Iteration 1 | Checksum: 148ad3e24
 
-Time (s): cpu = 00:07:56 ; elapsed = 00:02:09 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3800 ; free virtual = 14412
-Phase 4 Rip-up And Reroute | Checksum: 293767abb
+Time (s): cpu = 00:06:05 ; elapsed = 00:01:50 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
+Phase 4 Rip-up And Reroute | Checksum: 148ad3e24
 
-Time (s): cpu = 00:07:57 ; elapsed = 00:02:10 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3799 ; free virtual = 14411
+Time (s): cpu = 00:06:05 ; elapsed = 00:01:50 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15446
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 27485b73c
+Phase 5.1.1 Update Timing | Checksum: 178d9b396
 
-Time (s): cpu = 00:08:09 ; elapsed = 00:02:13 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3815 ; free virtual = 14420
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.200  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:06:13 ; elapsed = 00:01:52 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.383  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Delay CleanUp | Checksum: 27485b73c
+Phase 5.1 Delay CleanUp | Checksum: 178d9b396
 
-Time (s): cpu = 00:08:10 ; elapsed = 00:02:13 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3815 ; free virtual = 14420
+Time (s): cpu = 00:06:13 ; elapsed = 00:01:52 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 27485b73c
+Phase 5.2 Clock Skew Optimization | Checksum: 178d9b396
 
-Time (s): cpu = 00:08:10 ; elapsed = 00:02:13 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3815 ; free virtual = 14420
-Phase 5 Delay and Skew Optimization | Checksum: 27485b73c
+Time (s): cpu = 00:06:13 ; elapsed = 00:01:52 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
+Phase 5 Delay and Skew Optimization | Checksum: 178d9b396
 
-Time (s): cpu = 00:08:10 ; elapsed = 00:02:13 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3815 ; free virtual = 14420
+Time (s): cpu = 00:06:13 ; elapsed = 00:01:52 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Update Timing
-Phase 6.1 Update Timing | Checksum: 29294c7fd
+Phase 6.1 Update Timing | Checksum: 16e381f92
 
-Time (s): cpu = 00:08:24 ; elapsed = 00:02:17 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3816 ; free virtual = 14420
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.200  | TNS=0.000  | WHS=0.005  | THS=0.000  |
+Time (s): cpu = 00:06:23 ; elapsed = 00:01:55 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.383  | TNS=0.000  | WHS=0.008  | THS=0.000  |
 
-Phase 6 Post Hold Fix | Checksum: 21082a7bb
+Phase 6 Post Hold Fix | Checksum: 1592e61bc
 
-Time (s): cpu = 00:08:24 ; elapsed = 00:02:17 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3816 ; free virtual = 14420
+Time (s): cpu = 00:06:23 ; elapsed = 00:01:55 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
 
 Phase 7 Timing Verification
 
 Phase 7.1 Update Timing
-Phase 7.1 Update Timing | Checksum: 200bf68c1
+Phase 7.1 Update Timing | Checksum: 126671514
 
-Time (s): cpu = 00:08:43 ; elapsed = 00:02:21 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3810 ; free virtual = 14414
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.200  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:06:38 ; elapsed = 00:01:58 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.383  | TNS=0.000  | WHS=N/A    | THS=N/A    |
 
-Phase 7 Timing Verification | Checksum: 200bf68c1
+Phase 7 Timing Verification | Checksum: 126671514
 
-Time (s): cpu = 00:08:43 ; elapsed = 00:02:21 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3810 ; free virtual = 14414
+Time (s): cpu = 00:06:38 ; elapsed = 00:01:58 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
 
 Phase 8 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 15.0209 %
-  Global Horizontal Routing Utilization  = 18.902 %
+  Global Vertical Routing Utilization    = 14.4424 %
+  Global Horizontal Routing Utilization  = 17.514 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -700,101 +711,123 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 8 Route finalize | Checksum: 200bf68c1
+Phase 8 Route finalize | Checksum: 126671514
 
-Time (s): cpu = 00:08:45 ; elapsed = 00:02:22 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3809 ; free virtual = 14414
+Time (s): cpu = 00:06:40 ; elapsed = 00:01:59 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
 
 Phase 9 Verifying routed nets
 
  Verification completed successfully
-Phase 9 Verifying routed nets | Checksum: 200bf68c1
+Phase 9 Verifying routed nets | Checksum: 126671514
 
-Time (s): cpu = 00:08:46 ; elapsed = 00:02:22 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3808 ; free virtual = 14413
+Time (s): cpu = 00:06:40 ; elapsed = 00:01:59 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
 
 Phase 10 Depositing Routes
-Phase 10 Depositing Routes | Checksum: 2054968bd
+Phase 10 Depositing Routes | Checksum: 104a936fa
 
-Time (s): cpu = 00:08:51 ; elapsed = 00:02:27 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3808 ; free virtual = 14413
+Time (s): cpu = 00:06:45 ; elapsed = 00:02:04 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
 
 Phase 11 Post Router Timing
-INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.199  | TNS=0.000  | WHS=0.006  | THS=0.000  |
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.387  | TNS=0.000  | WHS=0.009  | THS=0.000  |
 
 INFO: [Route 35-61] The design met the timing requirement.
-Phase 11 Post Router Timing | Checksum: 29e93309e
+Phase 11 Post Router Timing | Checksum: 1576e255b
 
-Time (s): cpu = 00:09:57 ; elapsed = 00:02:45 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3806 ; free virtual = 14411
+Time (s): cpu = 00:07:36 ; elapsed = 00:02:17 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:10:00 ; elapsed = 00:02:45 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3806 ; free virtual = 14411
+Time (s): cpu = 00:07:39 ; elapsed = 00:02:18 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-70 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+73 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:10:08 ; elapsed = 00:02:50 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3806 ; free virtual = 14411
+route_design: Time (s): cpu = 00:07:46 ; elapsed = 00:02:22 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4912 ; free virtual = 15447
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3671 ; free virtual = 14398
-write_checkpoint: Time (s): cpu = 00:00:30 ; elapsed = 00:00:15 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3767 ; free virtual = 14401
+Write XDEF Complete: Time (s): cpu = 00:00:28 ; elapsed = 00:00:09 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4785 ; free virtual = 15446
+write_checkpoint: Time (s): cpu = 00:00:39 ; elapsed = 00:00:18 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4882 ; free virtual = 15446
 INFO: [DRC 23-27] Running DRC with 8 threads
-INFO: [Coretcl 2-168] The results of DRC are in file /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.runs/impl_1/system_top_drc_routed.rpt.
-report_drc: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3766 ; free virtual = 14400
+INFO: [Coretcl 2-168] The results of DRC are in file /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.runs/impl_1/system_top_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4882 ; free virtual = 15445
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
-report_timing_summary: Time (s): cpu = 00:01:29 ; elapsed = 00:00:20 . Memory (MB): peak = 2568.023 ; gain = 0.000 ; free physical = 3763 ; free virtual = 14399
+report_timing_summary: Time (s): cpu = 00:01:03 ; elapsed = 00:00:17 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4881 ; free virtual = 15446
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-report_power: Time (s): cpu = 00:00:23 ; elapsed = 00:00:10 . Memory (MB): peak = 2578.836 ; gain = 10.812 ; free physical = 3730 ; free virtual = 14366
+report_power: Time (s): cpu = 00:00:24 ; elapsed = 00:00:12 . Memory (MB): peak = 2624.730 ; gain = 0.000 ; free physical = 4882 ; free virtual = 15446
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-1223] The version limit for your license is '2017.05' and will expire in -84 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 Running DRC as a precondition to command write_bitstream
 INFO: [DRC 23-27] Running DRC with 8 threads
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP input i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP input i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP input i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/tmp_9_i_i_reg_4062_reg input i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/tmp_9_i_i_reg_4062_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
-WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/disparity_pixel_coprocessor_0/inst/disparity_pixel_coprocessor_mul_5ns_32s_32_3_U1/disparity_pixel_coprocessor_mul_5ns_32s_32_3_Mul3S_0_U/tmp_product output i_system_wrapper/system_i/disparity_pixel_coprocessor_0/inst/disparity_pixel_coprocessor_mul_5ns_32s_32_3_U1/disparity_pixel_coprocessor_mul_5ns_32s_32_3_Mul3S_0_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP output i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP output i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP output i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP output i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/tmp_9_i_i_reg_4062_reg output i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/tmp_9_i_i_reg_4062_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
-WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/disparity_pixel_coprocessor_0/inst/disparity_pixel_coprocessor_mul_5ns_32s_32_3_U1/disparity_pixel_coprocessor_mul_5ns_32s_32_3_Mul3S_0_U/buff0_reg__0 multiplier stage i_system_wrapper/system_i/disparity_pixel_coprocessor_0/inst/disparity_pixel_coprocessor_mul_5ns_32s_32_3_U1/disparity_pixel_coprocessor_mul_5ns_32s_32_3_Mul3S_0_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/disparity_pixel_coprocessor_0/inst/disparity_pixel_coprocessor_mul_5ns_32s_32_3_U1/disparity_pixel_coprocessor_mul_5ns_32s_32_3_Mul3S_0_U/tmp_product multiplier stage i_system_wrapper/system_i/disparity_pixel_coprocessor_0/inst/disparity_pixel_coprocessor_mul_5ns_32s_32_3_U1/disparity_pixel_coprocessor_mul_5ns_32s_32_3_Mul3S_0_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP multiplier stage i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP multiplier stage i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP multiplier stage i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP multiplier stage i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP multiplier stage i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC 23-20] Rule violation (REQP-125) connects_CLKINSEL_both_active - i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_mmcm: The MMCME2_ADV has an active CLKINSEL, but the CLKIN1 and CLKIN2 pins are not both active.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP6/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [DRC 23-20] Rule violation (AVAL-5) enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
-INFO: [Vivado 12-3199] DRC finished with 0 Errors, 21 Warnings, 21 Advisories
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP input i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP input i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP input i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/tmp_9_i_i_reg_4062_reg input i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/tmp_9_i_i_reg_4062_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip94_U0/stereo_matcher_mufYi_U44/stereo_matcher_mufYi_DSP48_0_U/in00 input i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip94_U0/stereo_matcher_mufYi_U44/stereo_matcher_mufYi_DSP48_0_U/in00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip94_U0/stereo_matcher_mufYi_U44/stereo_matcher_mufYi_DSP48_0_U/in00 input i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip94_U0/stereo_matcher_mufYi_U44/stereo_matcher_mufYi_DSP48_0_U/in00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip_U0/stereo_matcher_mufYi_x_U49/stereo_matcher_mufYi_DSP48_0_U/in00 input i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip_U0/stereo_matcher_mufYi_x_U49/stereo_matcher_mufYi_DSP48_0_U/in00/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip_U0/stereo_matcher_mufYi_x_U49/stereo_matcher_mufYi_DSP48_0_U/in00 input i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip_U0/stereo_matcher_mufYi_x_U49/stereo_matcher_mufYi_DSP48_0_U/in00/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP output i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP output i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP output i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP output i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/tmp_9_i_i_reg_4062_reg output i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/tmp_9_i_i_reg_4062_reg/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip94_U0/stereo_matcher_mufYi_U44/stereo_matcher_mufYi_DSP48_0_U/in00 output i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip94_U0/stereo_matcher_mufYi_U44/stereo_matcher_mufYi_DSP48_0_U/in00/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip_U0/stereo_matcher_mufYi_x_U49/stereo_matcher_mufYi_DSP48_0_U/in00 output i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip_U0/stereo_matcher_mufYi_x_U49/stereo_matcher_mufYi_DSP48_0_U/in00/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2 output i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2__0 output i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2__1 output i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2__2 output i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2 output i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2__0 output i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2__1 output i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-1) PREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2__2 output i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP multiplier stage i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP multiplier stage i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP multiplier stage i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP multiplier stage i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP multiplier stage i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip94_U0/stereo_matcher_mufYi_U44/stereo_matcher_mufYi_DSP48_0_U/in00 multiplier stage i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip94_U0/stereo_matcher_mufYi_U44/stereo_matcher_mufYi_DSP48_0_U/in00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip_U0/stereo_matcher_mufYi_x_U49/stereo_matcher_mufYi_DSP48_0_U/in00 multiplier stage i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/Clip_U0/stereo_matcher_mufYi_x_U49/stereo_matcher_mufYi_DSP48_0_U/in00/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2 multiplier stage i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2__0 multiplier stage i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2__1 multiplier stage i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2__2 multiplier stage i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul2_fu_7292_p2__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2 multiplier stage i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2__0 multiplier stage i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2__1 multiplier stage i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (DPOP-2) MREG Output pipelining - DSP i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2__2 multiplier stage i_system_wrapper/system_i/image_processing/stereo_matcher_1/inst/FindStereoCorrespond_1_U0/SADBlockMatching_U0/mul_fu_7273_p2__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC 23-20] Rule violation (REQP-125) connects_CLKINSEL_both_active - i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_clkgen/inst/i_mmcm_drp/i_mmcm: The MMCME2_ADV has an active CLKINSEL, but the CLKIN1 and CLKIN2 pins are not both active.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cb/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c1/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c2/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/hdmi/video_out/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Y/i_mul_c3/i_mult_macro/dsp_v5_1.DSP48_V5_1: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP6/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-4) enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC 23-20] Rule violation (AVAL-5) enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND - i_system_wrapper/system_i/image_processing/morphological_filter_0/inst/morphological_filter_Loop_loop_height_proc_U0/morphological_filter_dmul_64ns_64ns_64_6_max_dsp_U1/morphological_filter_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 42 Warnings, 21 Advisories
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 Loading data files...
 Loading site data...
@@ -802,11 +835,11 @@ Loading route data...
 Processing options...
 Creating bitmap...
 Creating bitstream...
-Bitstream compression saved 12073312 bits.
+Bitstream compression saved 12132160 bits.
 Writing bitstream ./system_top.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
-INFO: [Common 17-186] '/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Sat Mar 25 16:38:40 2017. For additional details about this file, please refer to the WebTalk help file at /home/sefo/devel/Programme/Xilinx/Vivado/2015.4/doc/webtalk_introduction.html.
+INFO: [Common 17-186] '/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Wed Aug 23 21:18:24 2017. For additional details about this file, please refer to the WebTalk help file at /home/sefo/devel/Programme/Xilinx/Vivado/2015.4/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-write_bitstream: Time (s): cpu = 00:01:23 ; elapsed = 00:01:20 . Memory (MB): peak = 2811.695 ; gain = 232.859 ; free physical = 3483 ; free virtual = 14129
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 25 16:38:40 2017...
+write_bitstream: Time (s): cpu = 00:01:23 ; elapsed = 00:01:19 . Memory (MB): peak = 2790.660 ; gain = 165.930 ; free physical = 4625 ; free virtual = 15193
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 23 21:18:24 2017...

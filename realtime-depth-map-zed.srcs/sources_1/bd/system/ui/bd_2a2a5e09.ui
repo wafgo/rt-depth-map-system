@@ -1,0 +1,67 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
+#  -string -flagsOSRD
+preplace port slowest_sync_clk -pg 1 -y 500 -defaultsOSRD
+preplace port ext_reset_in -pg 1 -y 520 -defaultsOSRD
+preplace portBus In12 -pg 1 -y 280 -defaultsOSRD
+preplace portBus In0 -pg 1 -y 40 -defaultsOSRD
+preplace portBus In13 -pg 1 -y 300 -defaultsOSRD
+preplace portBus In1 -pg 1 -y 60 -defaultsOSRD
+preplace portBus peripheral_aresetn1 -pg 1 -y 580 -defaultsOSRD
+preplace portBus Op1 -pg 1 -y 420 -defaultsOSRD
+preplace portBus In14 -pg 1 -y 320 -defaultsOSRD
+preplace portBus In2 -pg 1 -y 80 -defaultsOSRD
+preplace portBus peripheral_aresetn2 -pg 1 -y 660 -defaultsOSRD
+preplace portBus In15 -pg 1 -y 340 -defaultsOSRD
+preplace portBus In3 -pg 1 -y 100 -defaultsOSRD
+preplace portBus peripheral_aresetn3 -pg 1 -y 600 -defaultsOSRD
+preplace portBus peripheral_aresetn -pg 1 -y 560 -defaultsOSRD
+preplace portBus In4 -pg 1 -y 120 -defaultsOSRD
+preplace portBus peripheral_aresetn4 -pg 1 -y 620 -defaultsOSRD
+preplace portBus In5 -pg 1 -y 140 -defaultsOSRD
+preplace portBus peripheral_aresetn5 -pg 1 -y 640 -defaultsOSRD
+preplace portBus dout -pg 1 -y 190 -defaultsOSRD
+preplace portBus In6 -pg 1 -y 160 -defaultsOSRD
+preplace portBus peripheral_aresetn6 -pg 1 -y 680 -defaultsOSRD
+preplace portBus In7 -pg 1 -y 180 -defaultsOSRD
+preplace portBus peripheral_aresetn7 -pg 1 -y 700 -defaultsOSRD
+preplace portBus Res -pg 1 -y 420 -defaultsOSRD
+preplace portBus interconnect_aresetn -pg 1 -y 540 -defaultsOSRD
+preplace portBus In8 -pg 1 -y 200 -defaultsOSRD
+preplace portBus peripheral_aresetn8 -pg 1 -y 720 -defaultsOSRD
+preplace portBus In9 -pg 1 -y 220 -defaultsOSRD
+preplace portBus peripheral_aresetn9 -pg 1 -y 400 -defaultsOSRD
+preplace portBus In10 -pg 1 -y 240 -defaultsOSRD
+preplace portBus peripheral_reset -pg 1 -y 520 -defaultsOSRD
+preplace portBus In11 -pg 1 -y 260 -defaultsOSRD
+preplace inst sys_logic_inv -pg 1 -lvl 1 -y 410 -defaultsOSRD
+preplace inst sys_concat_intc -pg 1 -lvl 1 -y 170 -defaultsOSRD
+preplace inst sys_rstgen -pg 1 -lvl 1 -y 540 -defaultsOSRD
+preplace netloc ps_intr_07_1 1 0 1 NJ
+preplace netloc axi_vdma_0_s2mm_introut 1 0 1 NJ
+preplace netloc sys_logic_inv_Res 1 1 1 NJ
+preplace netloc ps_intr_12_1 1 0 1 NJ
+preplace netloc sys_cpu_clk 1 0 1 NJ
+preplace netloc ps_intr_01_1 1 0 1 NJ
+preplace netloc ps_intr_04_1 1 0 1 NJ
+preplace netloc In13_1 1 0 1 -10
+preplace netloc otg_vbusoc_1 1 0 1 NJ
+preplace netloc ps_intr_00_1 1 0 1 NJ
+preplace netloc sys_cpu_resetn 1 1 1 NJ
+preplace netloc sys_ps7_FCLK_RESET0_N 1 0 1 NJ
+preplace netloc ps_intr_05_1 1 0 1 NJ
+preplace netloc axi_iic_fmc_iic2intc_irpt 1 0 1 NJ
+preplace netloc axi_vdma_0_mm2s_introut 1 0 1 NJ
+preplace netloc ps_intr_06_1 1 0 1 NJ
+preplace netloc sys_rstgen_interconnect_aresetn 1 1 1 NJ
+preplace netloc morphological_filter_0_interrupt 1 0 1 NJ
+preplace netloc sys_cpu_reset 1 1 1 NJ
+preplace netloc ps_intr_03_1 1 0 1 NJ
+preplace netloc ps_intr_02_1 1 0 1 NJ
+preplace netloc sys_concat_intc_dout 1 1 1 NJ
+preplace netloc axi_hdmi_dma_mm2s_introut 1 0 1 NJ
+preplace netloc axi_iic_main_iic2intc_irpt 1 0 1 NJ
+levelinfo -pg 1 -160 180 390 -top -30 -bot 740
+",
+}
+0

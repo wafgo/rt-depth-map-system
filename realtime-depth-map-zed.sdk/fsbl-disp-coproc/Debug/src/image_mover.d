@@ -17,7 +17,7 @@ src/image_mover.o src/image_mover.d: ../src/image_mover.c ../src/fsbl.h \
  ../../fsbl-disp-coproc_bsp/ps7_cortexa9_0/include/xstatus.h \
  ../../fsbl-disp-coproc_bsp/ps7_cortexa9_0/include/xil_assert.h \
  ../src/fsbl_debug.h \
- /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h \
+ /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top_hw_platform_0/ps7_init.h \
  ../src/image_mover.h \
  ../../fsbl-disp-coproc_bsp/ps7_cortexa9_0/include/xreg_cortexa9.h \
  ../src/fsbl_hooks.h ../src/md5.h \
@@ -61,7 +61,7 @@ src/image_mover.o src/image_mover.d: ../src/image_mover.c ../src/fsbl.h \
 
 ../src/fsbl_debug.h:
 
-/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h:
+/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top_hw_platform_0/ps7_init.h:
 
 ../src/image_mover.h:
 

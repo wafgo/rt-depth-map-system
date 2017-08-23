@@ -1564,3 +1564,96 @@ Reason: ERROR: [Common 17-39] 'hsi::open_sw_design' failed due to earlier errors
 16:40:42 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
 16:40:42 INFO  : Bootgen command execution is done.
 17:04:06 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:07:34 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:07:37 INFO  : XSDB server has started successfully.
+20:07:39 INFO  : Processing command line option -hwspec /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf.
+20:09:19 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+20:09:20 INFO  : Bootgen command execution is done.
+20:09:36 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+20:09:36 INFO  : Bootgen command execution is done.
+17:42:10 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+17:42:15 INFO  : XSDB server has started successfully.
+17:42:17 INFO  : Processing command line option -hwspec /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf.
+17:42:17 INFO  : Checking for hwspec changes in the project system_top_hw_platform_1.
+19:09:29 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+19:09:29 INFO  : Overwriting existing bif file /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/bootimage/fsbl-disp-coproc.bif
+19:09:29 INFO  : Bootgen command execution is done.
+19:09:52 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin
+19:09:52 INFO  : Bootgen command execution is done.
+19:11:59 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+19:11:59 INFO  : Overwriting existing bif file /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/bootimage/fsbl-disp-coproc.bif
+19:11:59 INFO  : Bootgen command execution is done.
+19:12:24 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin
+19:12:24 INFO  : Bootgen command execution is done.
+14:29:34 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:29:39 INFO  : XSDB server has started successfully.
+14:29:41 INFO  : Processing command line option -hwspec /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf.
+14:29:41 INFO  : Checking for hwspec changes in the project system_top_hw_platform_1.
+14:29:48 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1503145697000,  Project:1501783219000
+14:29:48 INFO  : The hardware specification for project 'system_top_hw_platform_1' is different from /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf.
+14:29:48 INFO  : Copied contents of /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf into /system_top_hw_platform_1/system.hdf.
+14:29:58 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+14:29:58 INFO  : Clearing existing target manager status.
+14:30:01 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+14:30:01 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+14:30:20 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+14:30:20 INFO  : Bootgen command execution is done.
+14:53:27 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:43:56 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:43:58 INFO  : XSDB server has started successfully.
+20:43:58 INFO  : Processing command line option -hwspec /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf.
+20:43:58 INFO  : Checking for hwspec changes in the project system_top_hw_platform_1.
+20:44:04 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1503150462000,  Project:1503145697000
+20:44:04 INFO  : The hardware specification for project 'system_top_hw_platform_1' is different from /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf.
+20:44:04 INFO  : Copied contents of /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf into /system_top_hw_platform_1/system.hdf.
+20:44:10 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:44:10 INFO  : Clearing existing target manager status.
+20:44:12 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+20:44:12 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+20:44:34 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+20:44:34 INFO  : Bootgen command execution is done.
+21:10:49 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+14:45:02 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+14:45:08 INFO  : XSDB server has started successfully.
+14:45:11 INFO  : Processing command line option -hwspec /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf.
+14:45:11 INFO  : Checking for hwspec changes in the project system_top_hw_platform_1.
+14:45:21 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1503232899000,  Project:1503150462000
+14:45:21 INFO  : The hardware specification for project 'system_top_hw_platform_1' is different from /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf.
+14:45:21 INFO  : Copied contents of /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf into /system_top_hw_platform_1/system.hdf.
+14:45:28 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+14:45:28 INFO  : Clearing existing target manager status.
+14:45:31 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+14:45:31 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+14:45:45 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+14:45:46 INFO  : Bootgen command execution is done.
+15:26:52 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+20:05:41 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+20:05:47 INFO  : XSDB server has started successfully.
+20:05:51 INFO  : Processing command line option -hwspec /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf.
+20:05:51 INFO  : Checking for hwspec changes in the project system_top_hw_platform_1.
+20:06:06 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1503347852000,  Project:1503232899000
+20:06:06 INFO  : The hardware specification for project 'system_top_hw_platform_1' is different from /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf.
+20:06:06 INFO  : Copied contents of /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf into /system_top_hw_platform_1/system.hdf.
+20:06:12 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:06:13 INFO  : Clearing existing target manager status.
+20:06:17 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+20:06:17 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+20:06:27 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+20:06:28 INFO  : Bootgen command execution is done.
+22:33:16 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+22:33:16 INFO  : Bootgen command execution is done.
+23:50:59 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:25:34 INFO  : Launching XSDB server: xsdb -n /home/sefo/devel/Programme/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+21:25:38 INFO  : XSDB server has started successfully.
+21:25:39 INFO  : Processing command line option -hwspec /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf.
+21:25:39 INFO  : Checking for hwspec changes in the project system_top_hw_platform_1.
+21:25:46 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1503515904000,  Project:1503347852000
+21:25:46 INFO  : The hardware specification for project 'system_top_hw_platform_1' is different from /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf.
+21:25:46 INFO  : Copied contents of /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top.hdf into /system_top_hw_platform_1/system.hdf.
+21:25:53 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:25:53 INFO  : Clearing existing target manager status.
+21:25:56 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+21:25:56 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+21:26:12 INFO  : Invoking Bootgen: bootgen -image fsbl-disp-coproc.bif -o /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/bootimage/BOOT.bin -w on
+21:26:13 INFO  : Bootgen command execution is done.
+21:27:54 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

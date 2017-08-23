@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:hls:morphological_filter:1.0
--- IP Revision: 1703122055
+-- IP Revision: 1703232035
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -77,18 +77,18 @@ ENTITY system_morphological_filter_0_0 IS
     interrupt : OUT STD_LOGIC;
     video_in_TVALID : IN STD_LOGIC;
     video_in_TREADY : OUT STD_LOGIC;
-    video_in_TDATA : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-    video_in_TKEEP : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
-    video_in_TSTRB : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+    video_in_TDATA : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    video_in_TKEEP : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    video_in_TSTRB : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     video_in_TUSER : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     video_in_TLAST : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     video_in_TID : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     video_in_TDEST : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     video_out_TVALID : OUT STD_LOGIC;
     video_out_TREADY : IN STD_LOGIC;
-    video_out_TDATA : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-    video_out_TKEEP : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
-    video_out_TSTRB : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+    video_out_TDATA : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+    video_out_TKEEP : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+    video_out_TSTRB : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     video_out_TUSER : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     video_out_TLAST : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     video_out_TID : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -128,18 +128,18 @@ ARCHITECTURE system_morphological_filter_0_0_arch OF system_morphological_filter
       interrupt : OUT STD_LOGIC;
       video_in_TVALID : IN STD_LOGIC;
       video_in_TREADY : OUT STD_LOGIC;
-      video_in_TDATA : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-      video_in_TKEEP : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
-      video_in_TSTRB : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+      video_in_TDATA : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+      video_in_TKEEP : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+      video_in_TSTRB : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       video_in_TUSER : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       video_in_TLAST : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       video_in_TID : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       video_in_TDEST : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       video_out_TVALID : OUT STD_LOGIC;
       video_out_TREADY : IN STD_LOGIC;
-      video_out_TDATA : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-      video_out_TKEEP : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
-      video_out_TSTRB : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+      video_out_TDATA : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+      video_out_TKEEP : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
+      video_out_TSTRB : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       video_out_TUSER : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       video_out_TLAST : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       video_out_TID : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);

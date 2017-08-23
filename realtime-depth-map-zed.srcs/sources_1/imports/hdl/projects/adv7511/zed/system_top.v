@@ -72,11 +72,11 @@ module system_top (
   hdmi_data_e,
   hdmi_data,
 
-  i2s_mclk,
-  i2s_bclk,
-  i2s_lrclk,
-  i2s_sdata_out,
-  i2s_sdata_in,
+  //i2s_mclk,
+  //i2s_bclk,
+  //i2s_lrclk,
+  //i2s_sdata_out,
+  //i2s_sdata_in,
 
   spdif,
 
@@ -120,11 +120,11 @@ module system_top (
 
   output          spdif;
 
-  output          i2s_mclk;
-  output          i2s_bclk;
-  output          i2s_lrclk;
-  output          i2s_sdata_out;
-  input           i2s_sdata_in;
+  //output          i2s_mclk;
+  //output          i2s_bclk;
+  //output          i2s_lrclk;
+  //output          i2s_sdata_out;
+  //input           i2s_sdata_in;
 
 
   inout           iic_scl;
@@ -202,11 +202,11 @@ module system_top (
     .hdmi_hsync (hdmi_hsync),
     .hdmi_out_clk (hdmi_out_clk),
     .hdmi_vsync (hdmi_vsync),
-    .i2s_bclk (i2s_bclk),
-    .i2s_lrclk (i2s_lrclk),
-    .i2s_mclk (i2s_mclk),
-    .i2s_sdata_in (i2s_sdata_in),
-    .i2s_sdata_out (i2s_sdata_out),
+    //.i2s_bclk (i2s_bclk),
+    //.i2s_lrclk (i2s_lrclk),
+    //.i2s_mclk (i2s_mclk),
+    //.i2s_sdata_in (i2s_sdata_in),
+    //.i2s_sdata_out (i2s_sdata_out),
     .iic_fmc_scl_io (iic_scl),
     .iic_fmc_sda_io (iic_sda),
     .iic_mux_scl_i (iic_mux_scl_i_s),
@@ -223,11 +223,11 @@ module system_top (
     .ps_intr_05 (1'b0),
     .ps_intr_06 (1'b0),
     .ps_intr_07 (1'b0),
-    .ps_intr_08 (1'b0),
-    .ps_intr_09 (1'b0),
-    .ps_intr_10 (1'b0),
+    //.ps_intr_08 (1'b0),
+    //.ps_intr_09 (1'b0),
+    //.ps_intr_10 (1'b0),
     .ps_intr_12 (1'b0),
-    .ps_intr_13 (1'b0),
+    //.ps_intr_13 (1'b0),
     .otg_vbusoc (otg_vbusoc),
     .spdif (spdif));
 

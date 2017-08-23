@@ -56,25 +56,6 @@ COMPONENT system_auto_us_0
   PORT (
     s_axi_aclk : IN STD_LOGIC;
     s_axi_aresetn : IN STD_LOGIC;
-    s_axi_awaddr : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    s_axi_awlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-    s_axi_awsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-    s_axi_awburst : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
-    s_axi_awlock : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    s_axi_awcache : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-    s_axi_awprot : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
-    s_axi_awregion : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-    s_axi_awqos : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-    s_axi_awvalid : IN STD_LOGIC;
-    s_axi_awready : OUT STD_LOGIC;
-    s_axi_wdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    s_axi_wstrb : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
-    s_axi_wlast : IN STD_LOGIC;
-    s_axi_wvalid : IN STD_LOGIC;
-    s_axi_wready : OUT STD_LOGIC;
-    s_axi_bresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
-    s_axi_bvalid : OUT STD_LOGIC;
-    s_axi_bready : IN STD_LOGIC;
     s_axi_araddr : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     s_axi_arlen : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
     s_axi_arsize : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -91,25 +72,6 @@ COMPONENT system_auto_us_0
     s_axi_rlast : OUT STD_LOGIC;
     s_axi_rvalid : OUT STD_LOGIC;
     s_axi_rready : IN STD_LOGIC;
-    m_axi_awaddr : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    m_axi_awlen : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-    m_axi_awsize : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-    m_axi_awburst : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
-    m_axi_awlock : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
-    m_axi_awcache : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    m_axi_awprot : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-    m_axi_awregion : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    m_axi_awqos : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
-    m_axi_awvalid : OUT STD_LOGIC;
-    m_axi_awready : IN STD_LOGIC;
-    m_axi_wdata : OUT STD_LOGIC_VECTOR(63 DOWNTO 0);
-    m_axi_wstrb : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
-    m_axi_wlast : OUT STD_LOGIC;
-    m_axi_wvalid : OUT STD_LOGIC;
-    m_axi_wready : IN STD_LOGIC;
-    m_axi_bresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
-    m_axi_bvalid : IN STD_LOGIC;
-    m_axi_bready : OUT STD_LOGIC;
     m_axi_araddr : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     m_axi_arlen : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     m_axi_arsize : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
@@ -138,25 +100,6 @@ your_instance_name : system_auto_us_0
   PORT MAP (
     s_axi_aclk => s_axi_aclk,
     s_axi_aresetn => s_axi_aresetn,
-    s_axi_awaddr => s_axi_awaddr,
-    s_axi_awlen => s_axi_awlen,
-    s_axi_awsize => s_axi_awsize,
-    s_axi_awburst => s_axi_awburst,
-    s_axi_awlock => s_axi_awlock,
-    s_axi_awcache => s_axi_awcache,
-    s_axi_awprot => s_axi_awprot,
-    s_axi_awregion => s_axi_awregion,
-    s_axi_awqos => s_axi_awqos,
-    s_axi_awvalid => s_axi_awvalid,
-    s_axi_awready => s_axi_awready,
-    s_axi_wdata => s_axi_wdata,
-    s_axi_wstrb => s_axi_wstrb,
-    s_axi_wlast => s_axi_wlast,
-    s_axi_wvalid => s_axi_wvalid,
-    s_axi_wready => s_axi_wready,
-    s_axi_bresp => s_axi_bresp,
-    s_axi_bvalid => s_axi_bvalid,
-    s_axi_bready => s_axi_bready,
     s_axi_araddr => s_axi_araddr,
     s_axi_arlen => s_axi_arlen,
     s_axi_arsize => s_axi_arsize,
@@ -173,25 +116,6 @@ your_instance_name : system_auto_us_0
     s_axi_rlast => s_axi_rlast,
     s_axi_rvalid => s_axi_rvalid,
     s_axi_rready => s_axi_rready,
-    m_axi_awaddr => m_axi_awaddr,
-    m_axi_awlen => m_axi_awlen,
-    m_axi_awsize => m_axi_awsize,
-    m_axi_awburst => m_axi_awburst,
-    m_axi_awlock => m_axi_awlock,
-    m_axi_awcache => m_axi_awcache,
-    m_axi_awprot => m_axi_awprot,
-    m_axi_awregion => m_axi_awregion,
-    m_axi_awqos => m_axi_awqos,
-    m_axi_awvalid => m_axi_awvalid,
-    m_axi_awready => m_axi_awready,
-    m_axi_wdata => m_axi_wdata,
-    m_axi_wstrb => m_axi_wstrb,
-    m_axi_wlast => m_axi_wlast,
-    m_axi_wvalid => m_axi_wvalid,
-    m_axi_wready => m_axi_wready,
-    m_axi_bresp => m_axi_bresp,
-    m_axi_bvalid => m_axi_bvalid,
-    m_axi_bready => m_axi_bready,
     m_axi_araddr => m_axi_araddr,
     m_axi_arlen => m_axi_arlen,
     m_axi_arsize => m_axi_arsize,

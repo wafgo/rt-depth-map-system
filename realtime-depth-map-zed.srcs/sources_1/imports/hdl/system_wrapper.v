@@ -39,11 +39,11 @@ module system_wrapper
     hdmi_hsync,
     hdmi_out_clk,
     hdmi_vsync,
-    i2s_bclk,
-    i2s_lrclk,
-    i2s_mclk,
-    i2s_sdata_in,
-    i2s_sdata_out,
+    //i2s_bclk,
+    //i2s_lrclk,
+   // i2s_mclk,
+   // i2s_sdata_in,
+    //i2s_sdata_out,
     iic_fmc_scl_io,
     iic_fmc_sda_io,
     iic_mux_scl_i,
@@ -61,11 +61,11 @@ module system_wrapper
     ps_intr_05,
     ps_intr_06,
     ps_intr_07,
-    ps_intr_08,
-    ps_intr_09,
-    ps_intr_10,
+   // ps_intr_08,
+  //  ps_intr_09,
+  //  ps_intr_10,
     ps_intr_12,
-    ps_intr_13,
+  //  ps_intr_13,
     spdif,
     spi0_clk_i,
     spi0_clk_o,
@@ -114,11 +114,11 @@ module system_wrapper
   output hdmi_hsync;
   output hdmi_out_clk;
   output hdmi_vsync;
-  output [0:0]i2s_bclk;
-  output [0:0]i2s_lrclk;
-  output i2s_mclk;
-  input [0:0]i2s_sdata_in;
-  output [0:0]i2s_sdata_out;
+  //output [0:0]i2s_bclk;
+  //output [0:0]i2s_lrclk;
+  //output i2s_mclk;
+  //input [0:0]i2s_sdata_in;
+  //output [0:0]i2s_sdata_out;
   inout iic_fmc_scl_io;
   inout iic_fmc_sda_io;
   input [1:0]iic_mux_scl_i;
@@ -136,11 +136,11 @@ module system_wrapper
   input ps_intr_05;
   input ps_intr_06;
   input ps_intr_07;
-  input ps_intr_08;
-  input ps_intr_09;
-  input ps_intr_10;
+  //input ps_intr_08;
+  //input ps_intr_09;
+  //input ps_intr_10;
   input ps_intr_12;
-  input ps_intr_13;
+  //input ps_intr_13;
   output spdif;
   input spi0_clk_i;
   output spi0_clk_o;
@@ -190,11 +190,11 @@ module system_wrapper
   wire hdmi_hsync;
   wire hdmi_out_clk;
   wire hdmi_vsync;
-  wire [0:0]i2s_bclk;
-  wire [0:0]i2s_lrclk;
-  wire i2s_mclk;
-  wire [0:0]i2s_sdata_in;
-  wire [0:0]i2s_sdata_out;
+  //wire [0:0]i2s_bclk;
+ // wire [0:0]i2s_lrclk;
+//  wire i2s_mclk;
+//  wire [0:0]i2s_sdata_in;
+//  wire [0:0]i2s_sdata_out;
   wire iic_fmc_scl_i;
   wire iic_fmc_scl_io;
   wire iic_fmc_scl_o;
@@ -218,11 +218,11 @@ module system_wrapper
   wire ps_intr_05;
   wire ps_intr_06;
   wire ps_intr_07;
-  wire ps_intr_08;
-  wire ps_intr_09;
-  wire ps_intr_10;
+  //wire ps_intr_08;
+  //wire ps_intr_09;
+  //wire ps_intr_10;
   wire ps_intr_12;
-  wire ps_intr_13;
+  //wire ps_intr_13;
   wire spdif;
   wire spi0_clk_i;
   wire spi0_clk_o;
@@ -283,11 +283,11 @@ module system_wrapper
         .hdmi_hsync(hdmi_hsync),
         .hdmi_out_clk(hdmi_out_clk),
         .hdmi_vsync(hdmi_vsync),
-        .i2s_bclk(i2s_bclk),
-        .i2s_lrclk(i2s_lrclk),
-        .i2s_mclk(i2s_mclk),
-        .i2s_sdata_in(i2s_sdata_in),
-        .i2s_sdata_out(i2s_sdata_out),
+        //.i2s_bclk(i2s_bclk),
+        //.i2s_lrclk(i2s_lrclk),
+       // .i2s_mclk(i2s_mclk),
+       // .i2s_sdata_in(i2s_sdata_in),
+       // .i2s_sdata_out(i2s_sdata_out),
         .iic_fmc_scl_i(iic_fmc_scl_i),
         .iic_fmc_scl_o(iic_fmc_scl_o),
         .iic_fmc_scl_t(iic_fmc_scl_t),
@@ -309,11 +309,11 @@ module system_wrapper
         .ps_intr_05(ps_intr_05),
         .ps_intr_06(ps_intr_06),
         .ps_intr_07(ps_intr_07),
-        .ps_intr_08(ps_intr_08),
-        .ps_intr_09(ps_intr_09),
-        .ps_intr_10(ps_intr_10),
+       // .ps_intr_08(ps_intr_08),
+       // .ps_intr_09(ps_intr_09),
+       // .ps_intr_10(ps_intr_10),
         .ps_intr_12(ps_intr_12),
-        .ps_intr_13(ps_intr_13),
+       // .ps_intr_13(ps_intr_13),
         .spdif(spdif),
         .spi0_clk_i(spi0_clk_i),
         .spi0_clk_o(spi0_clk_o),

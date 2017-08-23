@@ -15,7 +15,7 @@ module FIFO_morphological_filter_heightloop_1_loc_channel_shiftReg (
     a,
     q);
 
-parameter DATA_WIDTH = 32'd11;
+parameter DATA_WIDTH = 32'd10;
 parameter ADDR_WIDTH = 32'd2;
 parameter DEPTH = 32'd3;
 
@@ -55,7 +55,7 @@ module FIFO_morphological_filter_heightloop_1_loc_channel (
     if_din);
 
 parameter MEM_STYLE = "shiftreg";
-parameter DATA_WIDTH = 32'd11;
+parameter DATA_WIDTH = 32'd10;
 parameter ADDR_WIDTH = 32'd2;
 parameter DEPTH = 32'd3;
 

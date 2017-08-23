@@ -906,7 +906,7 @@ wire   [11:0] j1_fu_2270_p3;
 reg    ap_sig_cseq_ST_st50_fsm_49;
 reg    ap_sig_bdd_927;
 reg   [11:0] j2_2_i_i_i_reg_1436;
-wire   [11:0] tmp_59_i_i_468_fu_2295_p3;
+wire   [11:0] tmp_59_i_i_469_fu_2295_p3;
 wire   [3:0] j_0_i_i_i_phi_fu_1452_p4;
 reg   [3:0] j_0_i_i_i_reg_1448;
 reg   [7:0] wdw_val_0_3_out_def_channel_fu_312;
@@ -1276,7 +1276,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((ap_const_logic_1 == ap_sig_cseq_ST_st50_fsm_49) & (ap_const_lv1_0 == tmp_2_i_i_reg_4058))) begin
-        j2_2_i_i_i_reg_1436 <= tmp_59_i_i_468_fu_2295_p3;
+        j2_2_i_i_i_reg_1436 <= tmp_59_i_i_469_fu_2295_p3;
     end else if (((ap_const_logic_1 == ap_sig_cseq_ST_st2_fsm_1) & (exitcond2_i_fu_1476_p2 == ap_const_lv1_0) & ~ap_sig_bdd_789 & ~(ap_const_lv1_0 == tmp_2_i_i_fu_1518_p2))) begin
         j2_2_i_i_i_reg_1436 <= ap_const_lv12_0;
     end
@@ -4230,7 +4230,7 @@ assign tmp_57_i_i_fu_2254_p2 = ($signed(ap_const_lv13_5) - $signed(dx_cast_i_fu_
 
 assign tmp_58_i_i_fu_2264_p2 = ($signed(tmp_57_i_i_fu_2254_p2) > $signed(13'b0000000000000)? 1'b1: 1'b0);
 
-assign tmp_59_i_i_468_fu_2295_p3 = ((tmp_60_i_i_fu_2289_p2[0:0] === 1'b1) ? tmp_190_fu_2285_p1 : ap_const_lv12_A);
+assign tmp_59_i_i_469_fu_2295_p3 = ((tmp_60_i_i_fu_2289_p2[0:0] === 1'b1) ? tmp_190_fu_2285_p1 : ap_const_lv12_A);
 
 assign tmp_59_i_i_fu_2279_p2 = ($signed(ap_const_lv13_6) + $signed(dx_cast_i_fu_2250_p1));
 

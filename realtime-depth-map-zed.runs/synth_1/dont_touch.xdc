@@ -31,15 +31,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_hdmi
 # IP: bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_hdmi_dma_0 || ORIG_REF_NAME==system_axi_hdmi_dma_0}]
 
-# IP: bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_sys_audio_clkgen_0 || ORIG_REF_NAME==system_sys_audio_clkgen_0}]
-
-# IP: bd/system/ip/system_axi_spdif_tx_core_0/system_axi_spdif_tx_core_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_spdif_tx_core_0 || ORIG_REF_NAME==system_axi_spdif_tx_core_0}]
-
-# IP: bd/system/ip/system_axi_i2s_adi_0/system_axi_i2s_adi_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_i2s_adi_0 || ORIG_REF_NAME==system_axi_i2s_adi_0}]
-
 # IP: bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_iic_fmc_0 || ORIG_REF_NAME==system_axi_iic_fmc_0}]
 
@@ -55,9 +46,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_hp0_
 # IP: bd/system/ip/system_xbar_1/system_xbar_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_1 || ORIG_REF_NAME==system_xbar_1}]
 
-# IP: bd/system/ip/system_disparity_pixel_coprocessor_0_0/system_disparity_pixel_coprocessor_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_disparity_pixel_coprocessor_0_0 || ORIG_REF_NAME==system_disparity_pixel_coprocessor_0_0}]
-
 # IP: bd/system/ip/system_axi_mem_intercon_1/system_axi_mem_intercon_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_mem_intercon_1 || ORIG_REF_NAME==system_axi_mem_intercon_1}]
 
@@ -70,23 +58,38 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_vdma
 # IP: bd/system/ip/system_xbar_2/system_xbar_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_2 || ORIG_REF_NAME==system_xbar_2}]
 
+# IP: bd/system/ip/system_axi_vdma_0_2/system_axi_vdma_0_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_vdma_0_2 || ORIG_REF_NAME==system_axi_vdma_0_2}]
+
+# IP: bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_vdma_0_0 || ORIG_REF_NAME==system_axi_vdma_0_0}]
+
+# IP: bd/system/ip/system_stereo_matcher_0_0/system_stereo_matcher_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_stereo_matcher_0_0 || ORIG_REF_NAME==system_stereo_matcher_0_0}]
+
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0}]
 
-# IP: bd/system/ip/system_auto_pc_1/system_auto_pc_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_1 || ORIG_REF_NAME==system_auto_pc_1}]
-
 # IP: bd/system/ip/system_auto_us_0/system_auto_us_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_us_0 || ORIG_REF_NAME==system_auto_us_0}]
-
-# IP: bd/system/ip/system_auto_pc_2/system_auto_pc_2.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_2 || ORIG_REF_NAME==system_auto_pc_2}]
 
 # IP: bd/system/ip/system_auto_us_1/system_auto_us_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_us_1 || ORIG_REF_NAME==system_auto_us_1}]
 
 # IP: bd/system/ip/system_auto_us_2/system_auto_us_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_us_2 || ORIG_REF_NAME==system_auto_us_2}]
+
+# IP: bd/system/ip/system_auto_pc_1/system_auto_pc_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_1 || ORIG_REF_NAME==system_auto_pc_1}]
+
+# IP: bd/system/ip/system_auto_us_3/system_auto_us_3.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_us_3 || ORIG_REF_NAME==system_auto_us_3}]
+
+# IP: bd/system/ip/system_auto_us_4/system_auto_us_4.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_us_4 || ORIG_REF_NAME==system_auto_us_4}]
+
+# IP: bd/system/ip/system_auto_pc_2/system_auto_pc_2.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_2 || ORIG_REF_NAME==system_auto_pc_2}]
 
 # XDC: bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_sys_ps7_0 || ORIG_REF_NAME==system_sys_ps7_0}] {/inst }]/inst ]]
@@ -121,20 +124,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_ooc.xdc
 
-# XDC: bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_board.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_sys_audio_clkgen_0 || ORIG_REF_NAME==system_sys_audio_clkgen_0}] {/inst }]/inst ]]
-
-# XDC: bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_sys_audio_clkgen_0 || ORIG_REF_NAME==system_sys_audio_clkgen_0}] {/inst }]/inst ]]
-
-# XDC: bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_ooc.xdc
-
-# XDC: bd/system/ip/system_axi_spdif_tx_core_0/axi_spdif_tx_constr.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_spdif_tx_core_0 || ORIG_REF_NAME==system_axi_spdif_tx_core_0}]
-
-# XDC: bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_i2s_adi_0 || ORIG_REF_NAME==system_axi_i2s_adi_0}]
-
 # XDC: bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_iic_fmc_0 || ORIG_REF_NAME==system_axi_iic_fmc_0}]
 
@@ -143,8 +132,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/system/ip/system_xbar_0/system_xbar_0_ooc.xdc
 
 # XDC: bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc
-
-# XDC: bd/system/ip/system_disparity_pixel_coprocessor_0_0/constraints/disparity_pixel_coprocessor_ooc.xdc
 
 # XDC: bd/system/ip/system_morphological_filter_0_0/constraints/morphological_filter.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_morphological_filter_0_0 || ORIG_REF_NAME==system_morphological_filter_0_0}] {/inst }]/inst ]]
@@ -161,16 +148,33 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/system/ip/system_xbar_2/system_xbar_2_ooc.xdc
 
-# XDC: bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc
+# XDC: bd/system/ip/system_axi_vdma_0_2/system_axi_vdma_0_2.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_vdma_0_2 || ORIG_REF_NAME==system_axi_vdma_0_2}] {/U0 }]/U0 ]]
 
-# XDC: bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc
+# XDC: bd/system/ip/system_axi_vdma_0_2/system_axi_vdma_0_2_clocks.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_vdma_0_2 || ORIG_REF_NAME==system_axi_vdma_0_2}] {/U0 }]/U0 ]]
+
+# XDC: bd/system/ip/system_axi_vdma_0_2/system_axi_vdma_0_2_ooc.xdc
+
+# XDC: bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_vdma_0_0 || ORIG_REF_NAME==system_axi_vdma_0_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_clocks.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_vdma_0_0 || ORIG_REF_NAME==system_axi_vdma_0_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_ooc.xdc
+
+# XDC: bd/system/ip/system_stereo_matcher_0_0/constraints/stereo_matcher_ooc.xdc
+
+# XDC: bd/system/ip/system_stereo_matcher_0_0/constraints/stereo_matcher.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_stereo_matcher_0_0 || ORIG_REF_NAME==system_stereo_matcher_0_0}] {/inst }]/inst ]]
+
+# XDC: bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc
 
 # XDC: bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc
 
 # XDC: bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_auto_us_0 || ORIG_REF_NAME==system_auto_us_0}] {/inst }]/inst ]]
-
-# XDC: bd/system/ip/system_auto_pc_2/system_auto_pc_2_ooc.xdc
 
 # XDC: bd/system/ip/system_auto_us_1/system_auto_us_1_ooc.xdc
 
@@ -182,8 +186,22 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/system/ip/system_auto_us_2/system_auto_us_2_clocks.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_auto_us_2 || ORIG_REF_NAME==system_auto_us_2}] {/inst }]/inst ]]
 
+# XDC: bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc
+
+# XDC: bd/system/ip/system_auto_us_3/system_auto_us_3_ooc.xdc
+
+# XDC: bd/system/ip/system_auto_us_3/system_auto_us_3_clocks.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_auto_us_3 || ORIG_REF_NAME==system_auto_us_3}] {/inst }]/inst ]]
+
+# XDC: bd/system/ip/system_auto_us_4/system_auto_us_4_ooc.xdc
+
+# XDC: bd/system/ip/system_auto_us_4/system_auto_us_4_clocks.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_auto_us_4 || ORIG_REF_NAME==system_auto_us_4}] {/inst }]/inst ]]
+
+# XDC: bd/system/ip/system_auto_pc_2/system_auto_pc_2_ooc.xdc
+
 # XDC: bd/system/system_ooc.xdc
 
-# XDC: /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/common/xilinx/compression_system_constr.xdc
+# XDC: imports/hdl/projects/common/xilinx/compression_system_constr.xdc
 
-# XDC: /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/common/zed/zed_system_constr.xdc
+# XDC: imports/hdl/projects/common/zed/zed_system_constr.xdc

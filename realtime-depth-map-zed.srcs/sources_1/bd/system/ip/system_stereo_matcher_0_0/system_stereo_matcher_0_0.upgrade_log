@@ -1,0 +1,64 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Wed Aug 23 19:27:02 2017
+| Host         : sefo-MS-7641 running 64-bit Ubuntu 16.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_stereo_matcher_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_stereo_matcher_0_0 (xilinx.com:hls:stereo_matcher:1.0) from (Rev. 1708222301) to (Rev. 1708231923)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'system_stereo_matcher_0_0'. These changes may impact your design.
+
+
+-upgraded port 'disp_out_TDATA' width 16 differs from original width 32
+-upgraded port 'disp_out_TKEEP' width 2 differs from original width 4
+-upgraded port 'disp_out_TSTRB' width 2 differs from original width 4
+
+
+
+
+
+
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Tue Aug 22 23:02:46 2017
+| Host         : sefo-MS-7641 running 64-bit Ubuntu 16.04.1 LTS
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_stereo_matcher_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_stereo_matcher_0_0 (xilinx.com:hls:stereo_matcher:1.0) from (Rev. 1708222110) to (Rev. 1708222301)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'system_stereo_matcher_0_0'. These changes may impact your design.
+
+
+-upgraded port 'left_in_TDATA' width 8 differs from original width 32
+-upgraded port 'left_in_TKEEP' width 1 differs from original width 4
+-upgraded port 'left_in_TSTRB' width 1 differs from original width 4
+-upgraded port 'right_in_TDATA' width 8 differs from original width 32
+-upgraded port 'right_in_TKEEP' width 1 differs from original width 4
+-upgraded port 'right_in_TSTRB' width 1 differs from original width 4
+

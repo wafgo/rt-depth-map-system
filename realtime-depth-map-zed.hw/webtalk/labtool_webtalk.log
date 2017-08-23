@@ -4,5 +4,5 @@
   **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 
-source /home/sefo/devel/github/sandbox/realtime-depth-map-zed/realtime-depth-map-zed.hw/webtalk/labtool_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Tue Mar 28 20:26:28 2017...
+source /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 22 16:00:06 2017...

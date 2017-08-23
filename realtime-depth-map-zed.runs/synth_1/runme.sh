@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.runs/synth_1'
+HD_PWD='/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,0 +1,63 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
+#  -string -flagsOSRD
+preplace port s_axi_CONTROL_BUS1 -pg 1 -y 570 -defaultsOSRD
+preplace port S_AXI_LITE2 -pg 1 -y 300 -defaultsOSRD
+preplace port S_AXI_LITE -pg 1 -y 60 -defaultsOSRD
+preplace port sm_dma_s2mm_rx_irq -pg 1 -y 640 -defaultsOSRD
+preplace port s_axi_CONTROL_BUS3 -pg 1 -y 40 -defaultsOSRD
+preplace port stereo_matcher_irq -pg 1 -y 700 -defaultsOSRD
+preplace port M_AXI_MM2S -pg 1 -y 70 -defaultsOSRD
+preplace port ap_clk -pg 1 -y 150 -defaultsOSRD
+preplace port M_AXI_MM2S1 -pg 1 -y 320 -defaultsOSRD
+preplace port M_AXI_S2MM -pg 1 -y 90 -defaultsOSRD
+preplace port morph_filter_irq -pg 1 -y 250 -defaultsOSRD
+preplace port M_AXI_MM2S2 -pg 1 -y 520 -defaultsOSRD
+preplace port mp_dma_mm2s_irq -pg 1 -y 170 -defaultsOSRD
+preplace port s_axi_CONTROL_BUS -pg 1 -y 110 -defaultsOSRD
+preplace port mp_dma_s2mm_irq -pg 1 -y 190 -defaultsOSRD
+preplace port sm_dma_mm2s_right_tx_irq -pg 1 -y 380 -defaultsOSRD
+preplace port sm_dma_mm2s_left_tx_irq -pg 1 -y 620 -defaultsOSRD
+preplace port M_AXI_S2MM1 -pg 1 -y 540 -defaultsOSRD
+preplace port S_AXI_LITE1 -pg 1 -y 510 -defaultsOSRD
+preplace portBus axi_resetn1 -pg 1 -y 380 -defaultsOSRD
+preplace portBus ap_rst_n1 -pg 1 -y 650 -defaultsOSRD
+preplace portBus axi_resetn -pg 1 -y 530 -defaultsOSRD
+preplace portBus ap_rst_n -pg 1 -y 170 -defaultsOSRD
+preplace portBus ap_rst_n2 -pg 1 -y 20 -defaultsOSRD
+preplace inst morphological_filter_0 -pg 1 -lvl 1 -y 140 -defaultsOSRD
+preplace inst stereo_matcher_1 -pg 1 -lvl 1 -y 610 -defaultsOSRD
+preplace inst sbm_vdma_right_in -pg 1 -lvl 2 -y 350 -defaultsOSRD
+preplace inst sbm_vdma_left_out -pg 1 -lvl 2 -y 630 -defaultsOSRD
+preplace inst mf_dma -pg 1 -lvl 2 -y 130 -defaultsOSRD
+preplace netloc axi_vdma_0_s2mm_introut 1 2 1 NJ
+preplace netloc sbm_vdma_right_in_M_AXIS_MM2S 1 0 3 40 460 NJ 460 840
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 2 1 NJ
+preplace netloc axi_vdma_0_s2mm_introut1 1 2 1 NJ
+preplace netloc sys_cpu_clk 1 0 2 20 30 450
+preplace netloc sbm_vdma_left_out_M_AXI_MM2S 1 2 1 NJ
+preplace netloc stereo_matcher_1_disp_out 1 1 1 440
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 0 3 50 10 NJ 10 840
+preplace netloc axi_vdma_0_mm2s_introut1 1 2 1 NJ
+preplace netloc S_AXI_LITE2_1 1 0 2 NJ 300 NJ
+preplace netloc axi_vdma_0_mm2s_introut2 1 2 1 NJ
+preplace netloc sbm_vdma_right_in_M_AXI_MM2S 1 2 1 NJ
+preplace netloc morphological_filter_0_video_out 1 1 1 430
+preplace netloc stereo_matcher_1_interrupt 1 1 2 NJ 750 NJ
+preplace netloc S_AXI_LITE1_1 1 0 2 NJ 510 NJ
+preplace netloc axi_cpu_interconnect_M09_AXI 1 0 1 NJ
+preplace netloc sys_cpu_resetn 1 0 2 40 40 NJ
+preplace netloc s_axi_CONTROL_BUS1_1 1 0 1 NJ
+preplace netloc sbm_vdma_left_out_M_AXI_S2MM 1 2 1 NJ
+preplace netloc sbm_vdma_left_out_M_AXIS_MM2S 1 0 3 50 490 NJ 490 840
+preplace netloc ap_rst_n1_1 1 0 1 NJ
+preplace netloc axi_vdma_0_mm2s_introut 1 2 1 NJ
+preplace netloc axi_cpu_interconnect_M10_AXI 1 0 2 NJ 60 NJ
+preplace netloc axi_resetn_1 1 0 2 NJ 520 NJ
+preplace netloc morphological_filter_0_interrupt 1 1 2 NJ 250 NJ
+preplace netloc axi_vdma_0_M_AXI_S2MM 1 2 1 NJ
+preplace netloc axi_resetn1_1 1 0 2 NJ 380 NJ
+levelinfo -pg 1 0 240 650 880 -top 0 -bot 810
+",
+}
+0

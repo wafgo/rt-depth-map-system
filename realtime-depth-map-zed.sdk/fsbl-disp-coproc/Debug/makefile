@@ -35,7 +35,7 @@ all: fsbl-disp-coproc.elf secondary-outputs
 fsbl-disp-coproc.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: ARM gcc linker'
-	arm-xilinx-eabi-gcc -L"/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl-disp-coproc/src" -Wl,-T -Wl,../src/lscript.ld -L../../fsbl-disp-coproc_bsp/ps7_cortexa9_0/lib -o "fsbl-disp-coproc.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-xilinx-eabi-gcc -L"/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/fsbl-disp-coproc/src" -Wl,-T -Wl,../src/lscript.ld -L../../fsbl-disp-coproc_bsp/ps7_cortexa9_0/lib -o "fsbl-disp-coproc.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

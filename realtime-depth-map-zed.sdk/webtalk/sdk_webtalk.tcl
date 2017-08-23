@@ -1,6 +1,6 @@
-webtalk_init -webtalk_dir /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/webtalk
+webtalk_init -webtalk_dir /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/webtalk
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "So Mär 5 20:04:36 2017" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Do Aug 3 21:56:40 2017" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "SDK v2015.4" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2015.4" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "amd64" -context "software_version_and_target_device"
@@ -12,9 +12,9 @@ webtalk_add_data -client project -key target_family -value "NA" -context "softwa
 webtalk_add_data -client project -key target_device -value "NA" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_package -value "NA" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_speed -value "NA" -context "software_version_and_target_device"
-webtalk_add_data -client project -key random_id -value "p5eimnn7ccl69daqs09a3riph5" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_id -value "2015.4_36" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "36" -context "software_version_and_target_device"
+webtalk_add_data -client project -key random_id -value "r1ajtdqadrd9qtld588nld5ias" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_id -value "2015.4_37" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "37" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "" -context "user_environment"
@@ -22,9 +22,12 @@ webtalk_add_data -client project -key cpu_speed -value "" -context "user_environ
 webtalk_add_data -client project -key total_processors -value "" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "" -context "user_environment"
 webtalk_register_client -client sdk
-webtalk_add_data -client sdk -key uid -value "1488740136000" -context "sdk\\\\bsp/1488740136000"
-webtalk_add_data -client sdk -key hwid -value "1480511760000" -context "sdk\\\\bsp/1488740136000"
-webtalk_add_data -client sdk -key os -value "standalone" -context "sdk\\\\bsp/1488740136000"
-webtalk_add_data -client sdk -key apptemplate -value "null" -context "sdk\\\\bsp/1488740136000"
-webtalk_transmit -clientid 3819519140 -regid "" -xml /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/webtalk/usage_statistics_ext_sdk.xml -html /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/webtalk/usage_statistics_ext_sdk.html -wdm /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/webtalk/sdk_webtalk.wdm -intro "<H3>SDK Usage Report</H3><BR>"
+webtalk_add_data -client sdk -key uid -value "1501783679000" -context "sdk\\\\hardware/1501783679000"
+webtalk_add_data -client sdk -key isZynq -value "true" -context "sdk\\\\hardware/1501783679000"
+webtalk_add_data -client sdk -key Processors -value "2" -context "sdk\\\\hardware/1501783679000"
+webtalk_add_data -client sdk -key VivadoVersion -value "2015.4" -context "sdk\\\\hardware/1501783679000"
+webtalk_add_data -client sdk -key Arch -value "zynq" -context "sdk\\\\hardware/1501783679000"
+webtalk_add_data -client sdk -key Device -value "7z020" -context "sdk\\\\hardware/1501783679000"
+webtalk_add_data -client sdk -key IsHandoff -value "true" -context "sdk\\\\hardware/1501783679000"
+webtalk_transmit -clientid 3241136410 -regid "" -xml /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/webtalk/usage_statistics_ext_sdk.xml -html /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/webtalk/usage_statistics_ext_sdk.html -wdm /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/webtalk/sdk_webtalk.wdm -intro "<H3>SDK Usage Report</H3><BR>"
 webtalk_terminate

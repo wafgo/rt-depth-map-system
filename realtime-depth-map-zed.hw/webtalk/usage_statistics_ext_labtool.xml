@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<webTalkData  fileName='usage_statistics_ext_labtool.xml'  majorVersion='1' minorVersion='0' timeStamp='Tue Mar 28 20:26:28 2017'>
+<webTalkData  fileName='usage_statistics_ext_labtool.xml'  majorVersion='1' minorVersion='0' timeStamp='Sat Jul 22 16:00:06 2017'>
 <section name="__ROOT__" level="0" order="1" description="">
  <section name="software_version_and_target_device" level="1" order="1" description="">
   <keyValuePair key="beta" value="FALSE" description="" />
   <keyValuePair key="build_version" value="1412921" description="" />
-  <keyValuePair key="date_generated" value="Tue Mar 28 20:26:28 2017" description="" />
+  <keyValuePair key="date_generated" value="Sat Jul 22 16:00:05 2017" description="" />
   <keyValuePair key="os_platform" value="LIN64" description="" />
   <keyValuePair key="product_version" value="Vivado v2015.4 (64-bit)" description="" />
   <keyValuePair key="project_id" value="8b98f99a-cf97-40cb-903f-d2ec05efd43d" description="" />
-  <keyValuePair key="project_iteration" value="1" description="" />
+  <keyValuePair key="project_iteration" value="2" description="" />
   <keyValuePair key="random_id" value="da302473509c5d99b24aea46a2d04301" description="" />
   <keyValuePair key="registration_id" value="211190153_0_0_944" description="" />
   <keyValuePair key="route_design" value="FALSE" description="" />
@@ -20,7 +20,7 @@
  </section>
  <section name="user_environment" level="1" order="2" description="">
   <keyValuePair key="cpu_name" value="AMD FX(tm)-8320 Eight-Core Processor" description="" />
-  <keyValuePair key="cpu_speed" value="2300.000 MHz" description="" />
+  <keyValuePair key="cpu_speed" value="1400.000 MHz" description="" />
   <keyValuePair key="os_name" value="Ubuntu" description="" />
   <keyValuePair key="os_release" value="Ubuntu 16.04.1 LTS" description="" />
   <keyValuePair key="system_ram" value="16.000 GB" description="" />

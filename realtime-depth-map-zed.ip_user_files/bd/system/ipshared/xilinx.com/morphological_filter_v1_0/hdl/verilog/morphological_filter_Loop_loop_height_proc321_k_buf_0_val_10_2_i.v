@@ -10,7 +10,7 @@ module morphological_filter_Loop_loop_height_proc321_k_buf_0_val_10_2_i_ram (add
 
 parameter DWIDTH = 8;
 parameter AWIDTH = 11;
-parameter MEM_SIZE = 1920;
+parameter MEM_SIZE = 1280;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -63,7 +63,7 @@ module morphological_filter_Loop_loop_height_proc321_k_buf_0_val_10_2_i(
     d1);
 
 parameter DataWidth = 32'd8;
-parameter AddressRange = 32'd1920;
+parameter AddressRange = 32'd1280;
 parameter AddressWidth = 32'd11;
 input reset;
 input clk;

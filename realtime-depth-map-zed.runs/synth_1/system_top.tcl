@@ -15,8 +15,8 @@ create_project -in_memory -part xc7z020clg484-1
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.cache/wt [current_project]
-set_property parent.project_path /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.xpr [current_project]
+set_property webtalk.parent_dir /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.cache/wt [current_project]
+set_property parent.project_path /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
@@ -24,59 +24,66 @@ set_property ip_repo_paths {
   /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/library
   /home/sefo/devel/workspace_zynq/erode/solution1
   /home/sefo/devel/svn/hw-accelerated-disparity-zynq/trunk/vivado-hls-project/solution1
+  /home/sefo/devel/workspace_zynq/stereoBM/solution1
 } [current_project]
 set_property vhdl_version vhdl_2k [current_fileset]
-add_files /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/system.bd
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_clkgen_0/axi_clkgen_constr.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_core_0/axi_hdmi_tx_constr.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_spdif_tx_core_0/axi_spdif_tx_constr.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_i2s_adi_0/axi_i2s_adi_constr.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_disparity_pixel_coprocessor_0_0/constraints/disparity_pixel_coprocessor_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_morphological_filter_0_0/constraints/morphological_filter.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_morphological_filter_0_0/constraints/morphological_filter_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_1/system_axi_vdma_0_1.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_1/system_axi_vdma_0_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_1/system_axi_vdma_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_xbar_2/system_xbar_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_2/system_auto_us_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_auto_us_2/system_auto_us_2_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/system_ooc.xdc]
-set_property is_locked true [get_files /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/system.bd]
+add_files /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/system.bd
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_iic_main_0/system_axi_iic_main_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_sys_rstgen_0/system_sys_rstgen_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_clkgen_0/axi_clkgen_constr.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_core_0/axi_hdmi_tx_constr.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/common/ad_axi_ip_constr.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_xbar_0/system_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_morphological_filter_0_0/constraints/morphological_filter.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_morphological_filter_0_0/constraints/morphological_filter_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_1/system_axi_vdma_0_1.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_1/system_axi_vdma_0_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_1/system_axi_vdma_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_xbar_2/system_xbar_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_2/system_axi_vdma_0_2.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_2/system_axi_vdma_0_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_2/system_axi_vdma_0_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_stereo_matcher_0_0/constraints/stereo_matcher_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_stereo_matcher_0_0/constraints/stereo_matcher.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_1/system_auto_us_1_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_2/system_auto_us_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_2/system_auto_us_2_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_3/system_auto_us_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_3/system_auto_us_3_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_4/system_auto_us_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_us_4/system_auto_us_4_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/ip/system_auto_pc_2/system_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/system_ooc.xdc]
+set_property is_locked true [get_files /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/system.bd]
 
 read_verilog -library xil_defaultlib {
-  /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.srcs/sources_1/imports/hdl/system_wrapper.v
-  /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/library/common/ad_iobuf.v
-  /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/system_top.v
+  /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/imports/hdl/library/common/ad_iobuf.v
+  /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/bd/system/hdl/system_wrapper.v
+  /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/imports/hdl/projects/adv7511/zed/system_top.v
 }
-read_xdc /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/common/xilinx/compression_system_constr.xdc
-set_property used_in_implementation false [get_files /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/common/xilinx/compression_system_constr.xdc]
+read_xdc /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/imports/hdl/projects/common/xilinx/compression_system_constr.xdc
+set_property used_in_implementation false [get_files /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/imports/hdl/projects/common/xilinx/compression_system_constr.xdc]
 
-read_xdc /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/common/zed/zed_system_constr.xdc
-set_property used_in_implementation false [get_files /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/common/zed/zed_system_constr.xdc]
+read_xdc /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/imports/hdl/projects/common/zed/zed_system_constr.xdc
+set_property used_in_implementation false [get_files /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.srcs/sources_1/imports/hdl/projects/common/zed/zed_system_constr.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

@@ -1,0 +1,37 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.5  2015-06-26 bk=1.3371 VDI=38 GEI=35 GUI=JA:1.8
+#  -string -flagsOSRD
+preplace port S_AXI_ACLK -pg 1 -y 370 -defaultsOSRD
+preplace port DMA_ACK -pg 1 -y 350 -defaultsOSRD
+preplace port DMA_REQ_TX -pg 1 -y 140 -defaultsOSRD
+preplace port DMA_ACK_RX -pg 1 -y 70 -defaultsOSRD
+preplace port clk_in1 -pg 1 -y 260 -defaultsOSRD
+preplace port s_axi -pg 1 -y 50 -defaultsOSRD
+preplace port DMA_REQ -pg 1 -y 380 -defaultsOSRD
+preplace port clk_out1 -pg 1 -y 280 -defaultsOSRD
+preplace port I2S -pg 1 -y 160 -defaultsOSRD
+preplace port DMA_REQ_RX -pg 1 -y 120 -defaultsOSRD
+preplace port spdif_tx_o -pg 1 -y 400 -defaultsOSRD
+preplace port s_axi1 -pg 1 -y 330 -defaultsOSRD
+preplace port DMA_ACK_TX -pg 1 -y 90 -defaultsOSRD
+preplace portBus resetn -pg 1 -y 280 -defaultsOSRD
+preplace inst axi_i2s_adi -pg 1 -lvl 2 -y 140 -defaultsOSRD
+preplace inst sys_audio_clkgen -pg 1 -lvl 1 -y 270 -defaultsOSRD
+preplace inst axi_spdif_tx_core -pg 1 -lvl 2 -y 390 -defaultsOSRD
+preplace netloc axi_spdif_tx_core_DMA_REQ 1 2 1 NJ
+preplace netloc axi_spdif_tx_core_spdif_tx_o 1 2 1 NJ
+preplace netloc axi_cpu_interconnect_M04_AXI 1 0 2 NJ 330 NJ
+preplace netloc axi_i2s_adi_I2S 1 2 1 NJ
+preplace netloc sys_cpu_clk 1 0 2 NJ 370 200
+preplace netloc sys_audio_clkgen_clk_out1 1 1 2 210 280 NJ
+preplace netloc axi_i2s_adi_DMA_REQ_TX 1 2 1 NJ
+preplace netloc sys_ps7_DMA1_ACK 1 0 2 NJ 90 NJ
+preplace netloc sys_cpu_resetn 1 0 2 20 380 220
+preplace netloc axi_i2s_adi_DMA_REQ_RX 1 2 1 NJ
+preplace netloc axi_cpu_interconnect_M05_AXI 1 0 2 NJ 50 NJ
+preplace netloc sys_ps7_DMA2_ACK 1 0 2 NJ 70 NJ
+preplace netloc sys_200m_clk 1 0 1 NJ
+preplace netloc sys_ps7_DMA0_ACK 1 0 2 NJ 350 NJ
+levelinfo -pg 1 0 110 370 540 -top 0 -bot 500
+",
+}

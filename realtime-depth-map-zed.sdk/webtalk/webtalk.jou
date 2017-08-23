@@ -2,11 +2,11 @@
 # Webtalk v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
 # 
-# Start of session at: Sun Mar  5 20:04:36 2017
-# Process ID: 4058
-# Current directory: /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/webtalk
+# Start of session at: Thu Aug  3 21:56:40 2017
+# Process ID: 5171
+# Current directory: /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/webtalk
 # Command line: wbtcv -mode batch -source sdk_webtalk.tcl
-# Log file: /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/webtalk/webtalk.log
-# Journal file: /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/webtalk/webtalk.jou
+# Log file: /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/webtalk/webtalk.log
+# Journal file: /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/webtalk/webtalk.jou
 #-----------------------------------------------------------
 source sdk_webtalk.tcl

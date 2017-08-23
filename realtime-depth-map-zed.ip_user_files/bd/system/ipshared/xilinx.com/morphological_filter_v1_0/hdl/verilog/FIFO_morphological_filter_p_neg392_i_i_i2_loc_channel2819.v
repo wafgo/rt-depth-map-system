@@ -15,7 +15,7 @@ module FIFO_morphological_filter_p_neg392_i_i_i2_loc_channel2819_shiftReg (
     a,
     q);
 
-parameter DATA_WIDTH = 32'd11;
+parameter DATA_WIDTH = 32'd10;
 parameter ADDR_WIDTH = 32'd1;
 parameter DEPTH = 32'd2;
 
@@ -55,7 +55,7 @@ module FIFO_morphological_filter_p_neg392_i_i_i2_loc_channel2819 (
     if_din);
 
 parameter MEM_STYLE = "auto";
-parameter DATA_WIDTH = 32'd11;
+parameter DATA_WIDTH = 32'd10;
 parameter ADDR_WIDTH = 32'd1;
 parameter DEPTH = 32'd2;
 

@@ -1,4 +1,4 @@
-14:16:34 **** Build of project fsbl-disp-coproc_bsp ****
+20:07:36 **** Auto Build of project fsbl-disp-coproc_bsp ****
 make -k all 
 Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
 make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -47,7 +47,6 @@ make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s include  "SHELL=/bin/sh" "COMPI
 Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src
 make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 Compiling ddrps
-arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
 Running Make libs in ps7_cortexa9_0/libsrc/axivdma_v6_0/src
 make -C ps7_cortexa9_0/libsrc/axivdma_v6_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 Compiling axivdma
@@ -112,5 +111,5 @@ make -C ps7_cortexa9_0/libsrc/qspips_v3_2/src -s libs  "SHELL=/bin/sh" "COMPILER
 Compiling qspips
 Finished building libraries
 
-14:16:44 Build Finished (took 10s.527ms)
+20:07:55 Build Finished (took 19s.562ms)
 

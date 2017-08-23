@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="/home/sefo/devel/dev_boards/zedBoard/yocto/build/tmp/deploy/images/zedboard-zynq7" key="bootgen_files_selection"/>
-	<item value="/home/sefo/devel/dev_boards/zedBoard/yocto/build/tmp/deploy/images/zedboard-zynq7" key="last_stored_selection"/>
+	<item value="/home/sefo" key="bootgen_files_selection"/>
+	<item value="/home/sefo" key="last_stored_selection"/>
 </section>

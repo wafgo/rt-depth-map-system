@@ -14,7 +14,7 @@ C_SRCS += \
 ../src/nand.c \
 ../src/nor.c \
 ../src/pcap.c \
-/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.c \
+/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top_hw_platform_0/ps7_init.c \
 ../src/qspi.c \
 ../src/rsa.c \
 ../src/sd.c 
@@ -57,21 +57,21 @@ C_DEPS += \
 src/%.o: ../src/%.S
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM gcc compiler'
-	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0" -c -fmessage-length=0 -MT"$@" -I../../fsbl-disp-coproc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top_hw_platform_0" -c -fmessage-length=0 -MT"$@" -I../../fsbl-disp-coproc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/%.o: ../src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM gcc compiler'
-	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0" -c -fmessage-length=0 -MT"$@" -I../../fsbl-disp-coproc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top_hw_platform_0" -c -fmessage-length=0 -MT"$@" -I../../fsbl-disp-coproc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-src/ps7_init.o: /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.c
+src/ps7_init.o: /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top_hw_platform_0/ps7_init.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM gcc compiler'
-	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0" -c -fmessage-length=0 -MT"$@" -I../../fsbl-disp-coproc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top_hw_platform_0" -c -fmessage-length=0 -MT"$@" -I../../fsbl-disp-coproc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

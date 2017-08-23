@@ -35,12 +35,12 @@ module morphological_filter_Block_crit_edge_i_i_i_i338_p (
         p_neg392_i_i_i2_cast_out_out_din,
         p_neg392_i_i_i2_cast_out_out_full_n,
         p_neg392_i_i_i2_cast_out_out_write,
-        p_neg392_i_i_i2_cast27806_out_out_din,
-        p_neg392_i_i_i2_cast27806_out_out_full_n,
-        p_neg392_i_i_i2_cast27806_out_out_write,
-        p_neg392_i_i_i2_cast27807_out_out_din,
-        p_neg392_i_i_i2_cast27807_out_out_full_n,
-        p_neg392_i_i_i2_cast27807_out_out_write
+        p_neg392_i_i_i2_cast27809_out_out_din,
+        p_neg392_i_i_i2_cast27809_out_out_full_n,
+        p_neg392_i_i_i2_cast27809_out_out_write,
+        p_neg392_i_i_i2_cast27810_out_out_din,
+        p_neg392_i_i_i2_cast27810_out_out_full_n,
+        p_neg392_i_i_i2_cast27810_out_out_write
 );
 
 parameter    ap_const_logic_1 = 1'b1;
@@ -48,9 +48,10 @@ parameter    ap_const_logic_0 = 1'b0;
 parameter    ap_ST_st1_fsm_0 = 1'b1;
 parameter    ap_const_lv32_0 = 32'b00000000000000000000000000000000;
 parameter    ap_const_lv1_1 = 1'b1;
-parameter    ap_const_lv11_5 = 11'b101;
+parameter    ap_const_lv10_5 = 10'b101;
 parameter    ap_const_lv11_9 = 11'b1001;
 parameter    ap_const_lv11_7FF = 11'b11111111111;
+parameter    ap_const_lv10_3FF = 10'b1111111111;
 parameter    ap_true = 1'b1;
 
 input   ap_clk;
@@ -60,9 +61,9 @@ output   ap_done;
 input   ap_continue;
 output   ap_idle;
 output   ap_ready;
-input  [10:0] rows;
+input  [9:0] rows;
 input  [10:0] cols;
-output  [10:0] heightloop_1_out_out_din;
+output  [9:0] heightloop_1_out_out_din;
 input   heightloop_1_out_out_full_n;
 output   heightloop_1_out_out_write;
 output  [10:0] widthloop_1_out_out_din;
@@ -74,18 +75,18 @@ output   tmp_41_out_out_write;
 output  [10:0] tmp_41_cast_out_out_din;
 input   tmp_41_cast_out_out_full_n;
 output   tmp_41_cast_out_out_write;
-output  [10:0] p_neg392_i_i_i2_out_out_din;
+output  [9:0] p_neg392_i_i_i2_out_out_din;
 input   p_neg392_i_i_i2_out_out_full_n;
 output   p_neg392_i_i_i2_out_out_write;
 output  [3:0] p_neg392_i_i_i2_cast_out_out_din;
 input   p_neg392_i_i_i2_cast_out_out_full_n;
 output   p_neg392_i_i_i2_cast_out_out_write;
-output  [10:0] p_neg392_i_i_i2_cast27806_out_out_din;
-input   p_neg392_i_i_i2_cast27806_out_out_full_n;
-output   p_neg392_i_i_i2_cast27806_out_out_write;
-output  [0:0] p_neg392_i_i_i2_cast27807_out_out_din;
-input   p_neg392_i_i_i2_cast27807_out_out_full_n;
-output   p_neg392_i_i_i2_cast27807_out_out_write;
+output  [9:0] p_neg392_i_i_i2_cast27809_out_out_din;
+input   p_neg392_i_i_i2_cast27809_out_out_full_n;
+output   p_neg392_i_i_i2_cast27809_out_out_write;
+output  [0:0] p_neg392_i_i_i2_cast27810_out_out_din;
+input   p_neg392_i_i_i2_cast27810_out_out_full_n;
+output   p_neg392_i_i_i2_cast27810_out_out_write;
 
 reg ap_done;
 reg ap_idle;
@@ -96,15 +97,15 @@ reg tmp_41_out_out_write;
 reg tmp_41_cast_out_out_write;
 reg p_neg392_i_i_i2_out_out_write;
 reg p_neg392_i_i_i2_cast_out_out_write;
-reg p_neg392_i_i_i2_cast27806_out_out_write;
-reg p_neg392_i_i_i2_cast27807_out_out_write;
+reg p_neg392_i_i_i2_cast27809_out_out_write;
+reg p_neg392_i_i_i2_cast27810_out_out_write;
 reg    ap_done_reg = 1'b0;
 (* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm = 1'b1;
 reg    ap_sig_cseq_ST_st1_fsm_0;
 reg    ap_sig_bdd_20;
 reg    ap_sig_bdd_81;
-wire   [10:0] tmp_41_i_fu_124_p2;
-wire   [10:0] p_neg392_i_i_i2_i_fu_132_p2;
+wire   [10:0] tmp_41_i_fu_130_p2;
+wire   [9:0] p_neg392_i_i_i2_i_fu_138_p2;
 reg   [0:0] ap_NS_fsm;
 
 
@@ -172,17 +173,17 @@ end
 
 always @ (ap_sig_cseq_ST_st1_fsm_0 or ap_sig_bdd_81) begin
     if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~ap_sig_bdd_81)) begin
-        p_neg392_i_i_i2_cast27806_out_out_write = ap_const_logic_1;
+        p_neg392_i_i_i2_cast27809_out_out_write = ap_const_logic_1;
     end else begin
-        p_neg392_i_i_i2_cast27806_out_out_write = ap_const_logic_0;
+        p_neg392_i_i_i2_cast27809_out_out_write = ap_const_logic_0;
     end
 end
 
 always @ (ap_sig_cseq_ST_st1_fsm_0 or ap_sig_bdd_81) begin
     if (((ap_const_logic_1 == ap_sig_cseq_ST_st1_fsm_0) & ~ap_sig_bdd_81)) begin
-        p_neg392_i_i_i2_cast27807_out_out_write = ap_const_logic_1;
+        p_neg392_i_i_i2_cast27810_out_out_write = ap_const_logic_1;
     end else begin
-        p_neg392_i_i_i2_cast27807_out_out_write = ap_const_logic_0;
+        p_neg392_i_i_i2_cast27810_out_out_write = ap_const_logic_0;
     end
 end
 
@@ -245,27 +246,27 @@ always @ (ap_CS_fsm) begin
 end
 
 
-always @ (ap_start or ap_done_reg or heightloop_1_out_out_full_n or widthloop_1_out_out_full_n or tmp_41_out_out_full_n or tmp_41_cast_out_out_full_n or p_neg392_i_i_i2_out_out_full_n or p_neg392_i_i_i2_cast_out_out_full_n or p_neg392_i_i_i2_cast27806_out_out_full_n or p_neg392_i_i_i2_cast27807_out_out_full_n) begin
-    ap_sig_bdd_81 = ((heightloop_1_out_out_full_n == ap_const_logic_0) | (widthloop_1_out_out_full_n == ap_const_logic_0) | (tmp_41_out_out_full_n == ap_const_logic_0) | (tmp_41_cast_out_out_full_n == ap_const_logic_0) | (p_neg392_i_i_i2_out_out_full_n == ap_const_logic_0) | (p_neg392_i_i_i2_cast_out_out_full_n == ap_const_logic_0) | (p_neg392_i_i_i2_cast27806_out_out_full_n == ap_const_logic_0) | (p_neg392_i_i_i2_cast27807_out_out_full_n == ap_const_logic_0) | (ap_start == ap_const_logic_0) | (ap_done_reg == ap_const_logic_1));
+always @ (ap_start or ap_done_reg or heightloop_1_out_out_full_n or widthloop_1_out_out_full_n or tmp_41_out_out_full_n or tmp_41_cast_out_out_full_n or p_neg392_i_i_i2_out_out_full_n or p_neg392_i_i_i2_cast_out_out_full_n or p_neg392_i_i_i2_cast27809_out_out_full_n or p_neg392_i_i_i2_cast27810_out_out_full_n) begin
+    ap_sig_bdd_81 = ((heightloop_1_out_out_full_n == ap_const_logic_0) | (widthloop_1_out_out_full_n == ap_const_logic_0) | (tmp_41_out_out_full_n == ap_const_logic_0) | (tmp_41_cast_out_out_full_n == ap_const_logic_0) | (p_neg392_i_i_i2_out_out_full_n == ap_const_logic_0) | (p_neg392_i_i_i2_cast_out_out_full_n == ap_const_logic_0) | (p_neg392_i_i_i2_cast27809_out_out_full_n == ap_const_logic_0) | (p_neg392_i_i_i2_cast27810_out_out_full_n == ap_const_logic_0) | (ap_start == ap_const_logic_0) | (ap_done_reg == ap_const_logic_1));
 end
 
-assign heightloop_1_out_out_din = (ap_const_lv11_5 + rows);
+assign heightloop_1_out_out_din = (ap_const_lv10_5 + rows);
 
-assign p_neg392_i_i_i2_cast27806_out_out_din = p_neg392_i_i_i2_i_fu_132_p2;
+assign p_neg392_i_i_i2_cast27809_out_out_din = p_neg392_i_i_i2_i_fu_138_p2;
 
-assign p_neg392_i_i_i2_cast27807_out_out_din = p_neg392_i_i_i2_i_fu_132_p2[0:0];
+assign p_neg392_i_i_i2_cast27810_out_out_din = p_neg392_i_i_i2_i_fu_138_p2[0:0];
 
-assign p_neg392_i_i_i2_cast_out_out_din = p_neg392_i_i_i2_i_fu_132_p2[3:0];
+assign p_neg392_i_i_i2_cast_out_out_din = p_neg392_i_i_i2_i_fu_138_p2[3:0];
 
-assign p_neg392_i_i_i2_i_fu_132_p2 = ($signed(ap_const_lv11_7FF) + $signed(rows));
+assign p_neg392_i_i_i2_i_fu_138_p2 = ($signed(ap_const_lv10_3FF) + $signed(rows));
 
-assign p_neg392_i_i_i2_out_out_din = p_neg392_i_i_i2_i_fu_132_p2;
+assign p_neg392_i_i_i2_out_out_din = p_neg392_i_i_i2_i_fu_138_p2;
 
-assign tmp_41_cast_out_out_din = tmp_41_i_fu_124_p2;
+assign tmp_41_cast_out_out_din = tmp_41_i_fu_130_p2;
 
-assign tmp_41_i_fu_124_p2 = ($signed(ap_const_lv11_7FF) + $signed(cols));
+assign tmp_41_i_fu_130_p2 = ($signed(ap_const_lv11_7FF) + $signed(cols));
 
-assign tmp_41_out_out_din = tmp_41_i_fu_124_p2;
+assign tmp_41_out_out_din = tmp_41_i_fu_130_p2;
 
 assign widthloop_1_out_out_din = (ap_const_lv11_9 + cols);
 

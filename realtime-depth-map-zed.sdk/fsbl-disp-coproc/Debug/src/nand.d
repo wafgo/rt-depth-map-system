@@ -17,7 +17,7 @@ src/nand.o src/nand.d: ../src/nand.c \
  ../../fsbl-disp-coproc_bsp/ps7_cortexa9_0/include/xstatus.h \
  ../../fsbl-disp-coproc_bsp/ps7_cortexa9_0/include/xil_assert.h \
  ../src/fsbl_debug.h \
- /home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h
+ /home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top_hw_platform_0/ps7_init.h
 
 ../../fsbl-disp-coproc_bsp/ps7_cortexa9_0/include/xparameters.h:
 
@@ -57,4 +57,4 @@ src/nand.o src/nand.d: ../src/nand.c \
 
 ../src/fsbl_debug.h:
 
-/home/sefo/devel/dev_boards/zedBoard/self-backed/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h:
+/home/sefo/devel/github/rt-depth-map-system/realtime-depth-map-zed.sdk/system_top_hw_platform_0/ps7_init.h:
